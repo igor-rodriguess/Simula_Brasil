@@ -4,7 +4,9 @@
 
 **Autores:**
 [Ademir Antônio dos Santos Júnior](https://www.linkedin.com/in/ademir-junior-9ba005357/)
+
 [Igor da Silva Rodrigues](https://www.linkedin.com/in/igor-dasilva-rodrigues/)
+
 [Julia Jesus Bezerra](https://www.linkedin.com/in/julia-jesus-bezerra-a872b5321/)
 
 ## Sumário
@@ -48,33 +50,84 @@ Além de reduzir drasticamente o tempo e o esforço de organização, a soluçã
 
 ### 2.1.1. Modelo de 5 Forças de Porter
 
-As Cinco Forças de Porter são utilizadas para analisar a competitividade de um mercado através de cinco dimensões estratégicas (PORTER, 1980). Nesta seção, essa metodologia foi aplicada para compreender o contexto de [INSTITUIÇÃO/PARCEIRO] e alinhar o desenvolvimento da solução ao seu ambiente competitivo.
+O Modelo das 5 Forças de Porter é uma ferramenta de gestão criada por Michael Porter com o objetivo de analisar o ambiente competitivo de um mercado. O modelo se estrutura em cinco pilares que permitem identificar oportunidades e ameaças em um determinado setor: a rivalidade entre concorrentes diretos, a ameaça de novos entrantes, a ameaça de produtos ou serviços substitutos, o poder de barganha dos clientes e o poder de barganha dos fornecedores. Embora originalmente concebido para maximizar lucro em ambientes empresariais, o modelo se mostra igualmente útil como ferramenta de diagnóstico estratégico para projetos sociais e educacionais.
+
+## Contexto da análise
+
+O projeto Simula Brasil atua no espaço das simulações de Modelo das Nações Unidas (MUN) como ferramenta de formação cidadã. Seu propósito central é levar esse formato — hoje concentrado quase exclusivamente em escolas particulares e universidades — para escolas públicas, de forma acessível e democrática.
 
 <div align="center">
   <sub>Figura 1 — Modelo de 5 Forças de Porter</sub><br>
   <img src="../assets/[IMAGEM].png" width="100%" alt="Modelo de 5 Forças de Porter"><br>
-  <sup>Fonte: Autores, [ANO].</sup>
+  <sup>Fonte:Simula Brasil, 2026.</sup>
 </div>
 
-**1. Análise da rivalidade entre concorrentes existentes**
+---
 
-> _[Preencher: análise + classificação (baixa/moderada/alta).]_
+## 1. Análise da rivalidade entre concorrentes existentes
 
-**2. Poder de barganha dos fornecedores**
+No eixo estrito de mercado, a rivalidade é praticamente nula: atualmente não existem projetos disputando as mesmas escolas ou os mesmos alunos que o Simula Brasil busca atender. Ao se ampliar o olhar para além da disputa direta por clientela, no entanto, é possível identificar concorrentes indiretos: os circuitos de MUN já estabelecidos, como os organizados por universidades, escolas particulares e eventos pagos com taxas de inscrição elevadas.
 
-> _[Preencher.]_
+Essa rivalidade se manifesta com alta intensidade em grandes centros urbanos e entre escolas particulares, que frequentemente disputam prestígio por meio da participação em MUNs de renome. Entre as escolas públicas, porém, essa disputa é baixa ou praticamente inexistente — o que caracteriza o espaço em que o Simula Brasil pretende atuar como um território ainda vazio.
 
-**3. Poder de barganha dos clientes**
+**Classificação:** Baixa
 
-> _[Preencher.]_
+---
 
-**4. Ameaça de novos entrantes**
+## 2. Poder de barganha dos fornecedores
 
-> _[Preencher.]_
+Os fornecedores do projeto são, principalmente, universidades e escolas parceiras — que cedem espaço físico e alunos com experiência na proposta —, ONGs de educação, possíveis patrocinadores financeiros e especialistas em relações internacionais que contribuem com palestras e validação de conteúdo.
 
-**5. Ameaça de produtos substitutos**
+O poder de negociação desses fornecedores é alto quando o projeto depende de um único parceiro, gerando vulnerabilidade em caso de retirada desse apoio. Esse poder se torna moderado quando existem múltiplas fontes alternativas de voluntários e recursos.
 
-> _[Preencher.]_
+Como implicação estratégica, recomenda-se a criação de um banco interno de facilitadores treinados, no qual ex-alunos do próprio Simula Brasil se formam e passam a atuar como mentores das edições seguintes — reduzindo, assim, a dependência de fornecedores externos ao longo do tempo.
+
+**Classificação:** Moderada
+
+---
+
+## 3. Poder de barganha dos clientes
+
+Os compradores, neste contexto, são as escolas, diretores e coordenadores pedagógicos, secretarias de educação e professores que decidem abraçar o projeto.
+
+Esse poder é alto por diversos motivos: as escolas públicas possuem agenda curricular apertada e já disputam tempo com outros programas, como feiras de ciências; os recursos são escassos, e qualquer projeto que exija custo extra enfrenta resistência natural; o custo de "não aderir" é baixo, já que, se o projeto não convencer, a escola simplesmente o ignora e segue com suas atividades habituais; e há um ceticismo inicial por parte dos gestores, muitas vezes expresso em falas como "MUN é coisa de escola particular".
+
+Diante disso, a implicação estratégica é reduzir ao máximo o custo de adesão — por meio de formato 100% online e treinamento gratuito de professores — e conduzir um piloto bem documentado, com fotos e depoimentos de alunos que sirvam de prova social para convencer novas escolas.
+
+**Classificação:** Alta
+
+---
+
+## 4. Ameaça de novos entrantes
+
+As barreiras de entrada nesse setor apresentam naturezas distintas. Em termos de capital financeiro, a barreira é baixa: não é necessário investimento robusto, já que plataformas gratuitas como Google Meet e Discord viabilizam a realização das simulações.
+
+Já em termos de know-how, a barreira é alta, pois a execução de um MUN de qualidade exige metodologia pedagógica consolidada, capacitação de professores e domínio das regras de procedimento das simulações.
+
+A barreira também é alta no aspecto institucional: para ingressar na rede de escolas públicas, é necessário passar pelo crivo de secretarias de educação, diretores e conselhos escolares — um processo burocrático que, na prática, funciona como proteção natural contra entrantes despreparados.
+
+Como implicação estratégica, recomenda-se documentar e padronizar a metodologia do projeto, de forma a criar uma marca de qualidade difícil de ser replicada rapidamente por terceiros. Também é estratégico buscar reconhecimento oficial junto a uma secretaria de educação e formar uma rede própria de facilitadores certificados, consolidando uma vantagem competitiva sustentável.
+
+**Classificação:** Moderada
+
+---
+
+## 5. Ameaça de produtos substitutos
+
+Os principais substitutos identificados são os grêmios estudantis, os clubes de debate e oratória e as olimpíadas de conhecimento.
+
+A ameaça representada por esses substitutos é de média a alta intensidade, uma vez que todas essas atividades disputam o mesmo recurso escasso: o tempo livre e a atenção do aluno, além da verba e do espaço destinados a atividades extracurriculares na escola.
+
+O diferencial competitivo das simulações de MUN, no entanto, está em sua capacidade de combinar simultaneamente oratória, negociação diplomática, pensamento crítico sobre política internacional, redação formal e trabalho em equipe. Além disso, o formato conecta o aluno a temas globais de maneira prática e vivencial, algo que nenhum dos substitutos citados oferece de forma tão integrada.
+
+**Classificação:** Média a Alta
+
+---
+## Conclusão
+
+A análise das cinco forças revela que o maior gargalo do projeto está no poder de negociação dos compradores — ou seja, das próprias escolas públicas —, cuja intensidade, neste contexto, é alta.
+
+Por essa razão, a prioridade de ação deve ser máxima nessa frente, concentrando esforços em reduzir o custo de adesão das escolas e em comprovar, de forma consistente e documentada, o impacto real do projeto Simula Brasil.
 
 ### 2.1.2. Análise SWOT da Instituição Parceira
 
@@ -112,42 +165,131 @@ Espera-se reduzir drasticamente o tempo e o esforço necessários para organizar
 O sucesso será medido pela implementação real da solução em pelo menos uma escola pública, viabilizando um fórum que antes seria inviável. Os critérios incluem: geração completa e automatizada da estrutura de um fórum, sem intervenção manual na etapa de montagem; realização de ao menos uma simulação com alunos da rede pública utilizando a plataforma; e, como indicador de impacto de médio prazo, a premiação de pelo menos um aluno participante em uma simulação externa reconhecida, como o FAAP MUN ou o SPMUN. A avaliação ocorrerá de forma contínua, por meio de testes das funcionalidades a cada sprint e do acompanhamento dos alunos nos eventos externos.
 
 ### 2.1.4. Value Proposition Canvas:
+## Introdução ao modelo
 
-<div align="center">
-  <sub>Figura 3 — Canvas de Proposta de Valor</sub><br>
-  <img src="../assets/[IMAGEM].png" width="600" alt="Canvas de Proposta de Valor"><br>
-  <sup>Fonte: Autores, [ANO].</sup>
-</div>
+O Canvas de Proposta de Valor é a ferramenta que explica por que o cliente escolheria uma organização em vez de outra alternativa disponível. Ele deve responder a perguntas centrais como: qual problema estamos resolvendo? Qual necessidade estamos satisfazendo? Que pacote de produtos ou serviços estamos oferecendo a cada segmento de cliente? O objetivo é garantir que aquilo que a proposta oferece esteja de fato alinhado com o que o cliente precisa, deseja e sofre no seu dia a dia. A ferramenta se estrutura em três elementos: as tarefas do cliente (o que ele está tentando fazer, resolver ou alcançar), as dores (obstáculos, riscos e frustrações enfrentados antes, durante ou depois de tentar realizar essas tarefas) e os ganhos (benefícios e resultados que ele deseja obter).
+
+---
+
+# Segmento 1 — Escolas e gestores (decisores da adesão)
 
 #### A. Perfil do Cliente
 
-Público-alvo principal: [descrever]. Público secundário: [descrever].
+**Público-alvo principal:** Escolas públicas, diretores, coordenadores pedagógicos e secretarias de educação.
 
-a) Tarefas do cliente
+**Público secundário:** Professores envolvidos na implementação do projeto.
 
-> _[Preencher.]_
+### a) Tarefas do cliente
 
-b) Dores
+As tarefas desse segmento envolvem oferecer atividades extracurriculares sem comprometer o orçamento, melhorar a reputação e o engajamento da escola perante a comunidade, e cumprir exigências da BNCC, como o desenvolvimento do protagonismo estudantil.
 
-> _[Preencher.]_
+### b) Dores
 
-c) Ganhos
+As principais dores identificadas são os recursos financeiros limitados, o tempo escasso da equipe gestora, o receio de investir em uma iniciativa que a comunidade escolar não se interesse, o ceticismo em relação à ideia de que "MUN é coisa de escola particular" e a resistência natural de professores já sobrecarregados diante da possibilidade de assumir mais uma atividade.
 
-> _[Preencher.]_
+### c) Ganhos
+
+Os ganhos desejados por esse público são a prova concreta de impacto pedagógico, um custo de implementação baixo ou próximo de zero, e o reconhecimento institucional por adotar uma postura inovadora perante a comunidade.
 
 #### B. Mapa de Valor
 
-a) Produtos e Serviços
+### a) Produtos e Serviços
 
-> _[Preencher.]_
+Como resposta a essas dores, o Simula Brasil oferece um formato 100% online e gratuito, capacitação gratuita de professores, um kit de implementação pronto e alinhamento explícito com a BNCC.
 
-b) Aliviadores de Dores
+### b) Aliviadores de Dores
 
-> _[Preencher.]_
+O formato 100% online e gratuito reduz a barreira financeira, a capacitação gratuita prepara os professores para conduzir a atividade e o kit de implementação diminui o esforço necessário para colocar o projeto em prática.
 
-c) Criadores de Ganho
+### c) Criadores de Ganho
 
-> _[Preencher.]_
+Como criadores de ganho, o projeto disponibiliza fotos e depoimentos que funcionam como prova social, certificado institucional de participação e a possibilidade de divulgação da escola como pioneira na iniciativa.
+
+---
+
+# Segmento 2 — Professores e coordenadores (quem executa)
+
+#### A. Perfil do Cliente
+
+**Público-alvo principal:** Professores e coordenadores pedagógicos.
+
+**Público secundário:** Facilitadores e mentores do projeto.
+
+### a) Tarefas do cliente
+
+Esse segmento busca engajar os alunos em atividades de valor pedagógico real, sem sobrecarga extra de trabalho, além de desenvolver competências interpessoais e socioemocionais na turma.
+
+### b) Dores
+
+As dores enfrentadas incluem a falta de tempo e de formação específica para conduzir uma simulação, a insegurança quanto às regras e procedimentos do MUN, e a insegurança em relação ao engajamento real dos alunos — o receio de montar toda a estrutura da atividade e, mesmo assim, não conseguir despertar interesse genuíno na turma.
+
+### c) Ganhos
+
+Os ganhos desejados são sentir-se apoiado na condução do projeto, ver resultado concreto no desenvolvimento dos alunos e ser reconhecido como um educador inovador.
+
+#### B. Mapa de Valor
+
+### a) Produtos e Serviços
+
+Para aliviar essas dores, o Simula Brasil oferece uma trilha de capacitação simples e gratuita, além de uma rede de mentores formada, entre outros, por ex-alunos do próprio projeto.
+
+### b) Aliviadores de Dores
+
+A trilha de capacitação reduz a insegurança dos professores, enquanto a rede de mentores oferece suporte durante a implementação e execução das simulações.
+
+### c) Criadores de Ganho
+
+Como criadores de ganho, o projeto disponibiliza certificados de facilitação, materiais prontos que reduzem o tempo de preparo, e visibilidade do professor como protagonista da iniciativa dentro da escola.
+
+---
+
+# Segmento 3 — Alunos de escola pública (usuário final)
+
+#### A. Perfil do Cliente
+
+**Público-alvo principal:** Alunos da rede pública de ensino.
+
+**Público secundário:** Estudantes interessados em desenvolver competências acadêmicas e socioemocionais.
+
+### a) Tarefas do cliente
+
+As tarefas desse segmento envolvem desenvolver soft skills como oratória, argumentação e pensamento crítico, acessar experiências de aprendizado hoje associadas a escolas de elite, e construir repertório para o futuro acadêmico e profissional.
+
+### b) Dores
+
+As dores identificadas são a insegurança para falar em público ou debater temas complexos, a falta de referência de "como" participar — por nunca terem tido acesso antes a esse tipo de formato —, e o desinteresse do próprio aluno em se engajar com a proposta.
+
+### c) Ganhos
+
+Os ganhos desejados incluem sentir-se capaz de discutir temas globais com propriedade, ganhar confiança e repertório para o futuro, e ser reconhecido por colegas, escola e família por essa conquista.
+
+#### B. Mapa de Valor
+
+### a) Produtos e Serviços
+
+Como aliviadores de dor, o Simula Brasil oferece linguagem acessível em português, um ambiente acolhedor, uma trilha progressiva que não exige experiência prévia e uma metodologia desenvolvida para facilitar a participação dos estudantes.
+
+### b) Aliviadores de Dores
+
+O projeto reduz deliberadamente a barreira de entrada percebida pelo aluno, oferecendo suporte durante toda a experiência e um ambiente que favorece a participação mesmo de quem nunca teve contato com um MUN.
+
+### c) Criadores de Ganho
+
+Como criadores de ganho, o projeto entrega certificado de participação, desenvolvimento real de soft skills e conexão prática e vivencial com temas globais.
+
+---
+
+## Encaixe (Fit) e ponto de atenção
+
+O maior encaixe do projeto está no segmento de alunos: a dor de exclusão é real e concreta, e a entrega do Simula Brasil resolve isso de forma direta.
+
+Já o maior risco de desencaixe está no segmento de gestores escolares, cujas dores — tempo, custo e ceticismo — exigem que os aliviadores de dor sejam extremamente concretos e visíveis. Caso contrário, a proposta de valor não se converte em adesão real, mesmo sendo bem construída no papel.
+
+## Conclusão
+
+A aplicação do Canvas de Proposta de Valor evidencia que o Simula Brasil atende diferentes segmentos de clientes, cada um com necessidades, desafios e expectativas específicas. Enquanto gestores escolares buscam soluções de baixo custo e impacto comprovado, professores necessitam de apoio metodológico e materiais que reduzam sua carga de trabalho, e os estudantes procuram oportunidades de desenvolvimento pessoal e acadêmico que normalmente não estão disponíveis em seu contexto.
+
+A análise demonstra que a proposta de valor do projeto está alinhada às principais dores desses públicos, oferecendo soluções concretas para reduzir barreiras de acesso e ampliar o engajamento. Ainda assim, o sucesso da iniciativa depende especialmente da capacidade de convencer gestores escolares sobre sua viabilidade e impacto, tornando essencial a produção de evidências, a realização de projetos-piloto e o fortalecimento de parcerias institucionais. Dessa forma, o Canvas de Proposta de Valor reforça que o diferencial do Simula Brasil não está apenas na realização de simulações de MUN, mas na democratização desse tipo de experiência educacional para estudantes da rede pública de ensino.
 
 ### 2.1.5. Matriz de Riscos do Projeto
 
