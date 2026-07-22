@@ -129,15 +129,34 @@ A análise das cinco forças revela que o maior gargalo do projeto está no pode
 
 Por essa razão, a prioridade de ação deve ser máxima nessa frente, concentrando esforços em reduzir o custo de adesão das escolas e em comprovar, de forma consistente e documentada, o impacto real do projeto Simula Brasil.
 
-### 2.1.2. Análise SWOT da Instituição Parceira
+### 2.1.2. Análise SWOT
+
+A análise SWOT foi elaborada considerando o posicionamento do Simula Brasil no contexto da educação pública brasileira e do universo das simulações da ONU (MUN), um cenário marcado por forte desigualdade de acesso, baixa penetração de tecnologia na organização de eventos educacionais e crescente demanda por soft skills como pensamento crítico, oratória e negociação. A avaliação contempla fatores internos relativos à proposta de valor, à arquitetura tecnológica e à equipe do projeto, bem como fatores externos vinculados ao cenário educacional público, às barreiras financeiras dos estudantes e à ausência de concorrência direta no segmento. 
 
 <div align="center">
-  <sub>Figura 2 — Análise SWOT de [INSTITUIÇÃO]</sub><br>
-  <img src="../assets/[IMAGEM].png" width="600" alt="Análise SWOT"><br>
-  <sup>Fonte: Autores, [ANO].</sup>
+  <sub>Figura 2 — Análise SWOT</sub><br>
+  <img src="assets/negocios/analise-swot.jpeg" width="600" alt="Análise SWOT"><br>
+  <sup>Fonte: Autores, 2026.</sup>
 </div>
 
-> _[Preencher: leitura das Forças, Fraquezas, Oportunidades e Ameaças e como a solução atua sobre elas.]_
+**Forças (Ambiente interno)**
+
+O principal diferencial do Simula Brasil está no uso de agentes de inteligência artificial para automatizar a montagem de fóruns MUN, reduzindo um processo que hoje leva semanas ou meses de planejamento intensivo para poucas horas ou minutos, incluindo distribuição de países e comitês, geração de temáticas e cenários de crise, e formação de diretorias. Essa automação representa uma vantagem competitiva difícil de replicar manualmente. Outro ponto forte é o modelo de duas frentes complementares: a aplicação de organização de fóruns e a plataforma de formação e acesso para estudantes de baixa renda, o que amplia o impacto do projeto para além da simples tecnologia, atacando também o problema de letramento sobre o universo MUN. A proposta ainda conta com baixa barreira de adoção institucional, pois permite que qualquer escola, com ou sem experiência prévia em simulações, organize seu próprio evento.
+
+**Fraquezas (Ambiente interno)**
+
+Como projeto em estágio inicial, o Simula Brasil enfrenta a ausência de histórico e validação de mercado, o que pode gerar resistência de escolas e instituições parceiras na adoção de uma ferramenta ainda não testada em larga escala. A dependência de agentes de IA para geração de conteúdo sensível (temáticas, cenários de crise, distribuição de comitês) exige validação pedagógica cuidadosa, já que erros de geração podem comprometer a credibilidade do produto perante educadores. Além disso, a proposta inclui um fundo de financiamento para alunos em vulnerabilidade, o que introduz uma dependência de captação de recursos externos (parcerias, patrocínios ou doações) que foge do controle direto do produto tecnológico e pode limitar a escalabilidade dessa frente caso o financiamento não seja sustentável.
+
+**Oportunidades (Ambiente externo)**
+
+O contexto atual é altamente favorável: segundo o Censo Escolar 2024 (INEP), 83,1% das matrículas do ensino médio estão na rede estadual pública.<sup>[1](#ref1)</sup> , evidenciando um mercado praticamente inexplorado para simulações da ONU, hoje concentradas em colégios particulares e faculdades. A pesquisa da UNILA (2025) reforça a legitimidade pedagógica da proposta, ao demonstrar que a participação em MUNs aprimora oratória, negociação e pensamento crítico <sup>[2](#ref2)</sup> , o que facilita o discurso institucional junto a secretarias de educação e escolas públicas. Some-se a isso a crescente pressão por desenvolvimento de competências socioemocionais (soft skills) na educação básica brasileira, alinhada a políticas públicas e ao próprio Novo Ensino Médio. A ausência de uma solução tecnológica equivalente no mercado brasileiro representa uma janela de pioneirismo para o Simula Brasil se consolidar como referência antes que outros players entrem no espaço.
+
+**Ameaças (Ambiente externo)**
+
+A principal ameaça externa é a dependência de parcerias institucionais (escolas, secretarias de educação, organizações como a Associação Crescer Sempre) para viabilizar o piloto e a escala do projeto, o que expõe o Simula Brasil a riscos de descontinuidade caso essas parcerias não se sustentem. Também há o risco de resistência cultural de professores e gestores escolares pouco familiarizados com o universo MUN, o que pode desacelerar a adoção mesmo diante da automação oferecida. Do ponto de vista financeiro, a captação de recursos para o fundo de apoio a estudantes vulneráveis depende de fatores macroeconômicos e de doação/patrocínio, sujeitos a instabilidades. Por fim, à medida que o projeto ganha tração, existe a possibilidade de entrada de concorrentes, sejam startups edtech ou iniciativas de grandes organizações MUN já estabelecidas, que podem tentar replicar o modelo de automação por IA.
+
+---
+  A análise evidencia que o Simula Brasil possui uma proposta de valor inovadora e tecnicamente diferenciada, sustentada por um problema social relevante e por uma janela de oportunidade praticamente sem concorrência direta. O principal desafio está em validar a solução junto a escolas públicas e garantir a sustentabilidade do fundo de financiamento, sendo essas as frentes que determinarão a capacidade do projeto de romper, de fato, a barreira que hoje restringe as simulações da ONU à elite educacional brasileira.
 
 ### 2.1.3. Solução
 
@@ -296,20 +315,75 @@ A análise demonstra que a proposta de valor do projeto está alinhada às princ
 A Matriz de Riscos é uma ferramenta visual utilizada para priorizar os riscos de um projeto com base em duas dimensões: probabilidade, que mede a chance de um risco ocorrer, e impacto, que representa suas consequências caso se concretize (PROJECT MANAGEMENT INSTITUTE, 2017). A combinação dessas dimensões gera uma classificação geral — alta, média ou baixa — representada por cores, facilitando o foco nos riscos mais críticos e orientando a construção de planos de ação preventivos.
 
 <div align="center">
-  <sub>Figura 4 — Matriz de Riscos — Ameaças</sub><br>
-  <img src="../assets/[IMAGEM].png" width="600" alt="Matriz de Riscos — Ameaças"><br>
-  <sup>Fonte: Autores, [ANO].</sup>
+  <sub>Figura 3 — Matriz de Riscos</sub><br>
+  <img src="assets/negocios/matriz-de-riscos.jpeg" width="600" alt="Matriz de Riscos"><br>
+  <sup>Fonte: Autores, 2026.</sup>
 </div>
 
-> _[Preencher: para cada ameaça — natureza, probabilidade, impacto, classificação geral e plano de ação.]_
+**AM01**
 
-<div align="center">
-  <sub>Figura 5 — Matriz de Riscos — Oportunidades</sub><br>
-  <img src="../assets/[IMAGEM].png" width="600" alt="Matriz de Riscos — Oportunidades"><br>
-  <sup>Fonte: Autores, [ANO].</sup>
-</div>
+**Risco:** Geração de conteúdo pedagogicamente inadequado pela IA
+**Probabilidade:** 70% (Alta)
+**Impacto:** Muito Alto
+**Descrição:** O núcleo da solução depende de agentes de IA para gerar temáticas, cenários de crise e distribuição de países/comitês. Se a IA produzir conteúdo impreciso, tendencioso ou pedagogicamente inadequado (por exemplo, um cenário de crise mal contextualizado historicamente), a credibilidade do produto perante professores e escolas públicas pode ser comprometida logo no primeiro uso.
+**Plano de Ação:** Implementar uma camada de revisão humana (curadoria pedagógica) antes da publicação de qualquer conteúdo gerado por IA, além de prompts estruturados com validação por especialistas da educação.
 
-> _[Preencher: para cada oportunidade — natureza, probabilidade, impacto, classificação geral e plano de ação.]_
+**AM02**
+
+**Risco:** Instabilidade na captação de recursos para o fundo de financiamento
+**Probabilidade:** 50% (Moderada)
+**Impacto:** Muito Alto
+**Descrição:** A frente de formação e acesso depende de um fundo de financiamento para estudantes em vulnerabilidade, sustentado por parcerias, patrocínios ou doações externas. Uma eventual descontinuidade de aportes compromete diretamente a promessa central de democratização de acesso do projeto.
+**Plano de Ação:** Diversificar as fontes de captação (editais públicos, patrocínio corporativo via leis de incentivo, parcerias com ONGs) e estabelecer um fundo de reserva mínimo antes de comprometer vagas financiadas.
+
+**AM03**
+
+**Risco:** Resistência cultural de professores e gestores escolares
+**Probabilidade:** 50% (Moderada)
+**Impacto:** Alto
+**Descrição:** Grande parte dos professores e gestores da rede pública não possui familiaridade com o universo MUN nem com ferramentas de automação por IA. Isso pode gerar desconfiança quanto à legitimidade do processo automatizado, atrasando a adoção institucional mesmo diante da economia de tempo oferecida.
+**Plano de Ação:** Desenvolver materiais de onboarding simplificados e um piloto guiado (com apoio direto da equipe) nas primeiras escolas parceiras para gerar cases de sucesso replicáveis.
+
+**AM04**
+
+**Risco:** Limitações de conectividade em escolas públicas periféricas
+**Probabilidade:** 30% (Baixa)
+**Impacto:** Alto
+**Descrição:** As escolas públicas, especialmente em regiões periféricas, podem enfrentar internet instável ou inexistente, dificultando o uso de uma plataforma que depende de processamento de IA em tempo real para montar o fórum.
+**Plano de Ação:** Estruturar fluxos assíncronos (ex: geração do fórum pode ser solicitada e processada em background, com notificação quando pronta) e permitir exportação offline do material gerado (PDF/CSV) para uso posterior sem necessidade de conexão contínua.
+2.1.5.2. Oportunidades
+
+**OP01**
+
+**Risco:** Adoção rápida por escolas devido à eliminação da barreira organizacional
+**Probabilidade:** 90% (Muito Alta)
+**Impacto:** Muito Alto
+**Descrição:** Hoje, organizar um fórum MUN exige semanas ou meses de planejamento manual. Se a automação por IA reduzir esse processo para horas, escolas com pouco ou nenhum histórico em simulações passam a enxergar a organização de um evento próprio como algo viável, o que pode gerar adoção orgânica acelerada.
+**Plano de Ação:** Garantir que o fluxo de criação do fórum tenha uma experiência "à prova de erros" (onboarding simples, poucos cliques), já que esse será o principal gatilho de conversão de novas escolas.
+
+**OP02**
+
+**Risco:** Parcerias com secretarias estaduais de educação
+**Probabilidade:** 70% (Alta)
+**Impacto:** Muito Alto
+**Descrição:** Como 83,1% das matrículas do ensino médio estão na rede estadual, uma parceria institucional com secretarias de educação pode viabilizar a adoção em escala (centenas de escolas de uma vez), em vez de depender de adesão escola por escola.
+**Plano de Ação:** Preparar um material institucional específico para secretarias, com foco em impacto social mensurável e alinhamento com o Novo Ensino Médio, para viabilizar reuniões e projetos-piloto regionais.
+
+**OP03**
+
+**Risco:** Geração de dados de impacto social para atrair investidores e patrocinadores
+**Probabilidade:** 50% (Moderada)
+**Impacto:** Moderado
+**Descrição:** Ao centralizar a organização de fóruns e o acesso de estudantes de baixa renda em uma única plataforma, o Simula Brasil passa a gerar dados estruturados de impacto (nº de estudantes atendidos, escolas participantes, evolução de habilidades). Esses dados podem ser usados como ativo estratégico para atrair patrocinadores de impacto social e editais de fomento.
+**Plano de Ação:** Estruturar desde o início um painel simples de métricas de impacto (dashboard), pensado tanto para uso interno quanto para apresentações a potenciais parceiros e financiadores.
+
+**OP04**
+
+**Risco:** Escalabilidade para outros formatos de simulação acadêmica
+**Probabilidade:**30% (Baixa)
+**Impacto:** Alto
+**Descrição:** Embora o escopo inicial seja o MUN, a arquitetura de automação por IA (distribuição de papéis, geração de cenários, formação de diretorias) pode ser generalizada para outros tipos de simulação educacional (ex: simulações legislativas, tribunais simulados, feiras de ciências), ampliando o mercado endereçável do produto.
+**Plano de Ação:** Desenvolver os módulos de geração de conteúdo (temáticas, papéis, cenários) de forma flexível e adaptável, para que não fiquem limitados exclusivamente ao formato ONU.
 
 ## 2.2. Personas
 
@@ -941,6 +1015,6 @@ O Business Model Canvas, proposto por Osterwalder e Pigneur (2011), é uma ferra
 
 # <a name="c8"></a>8. Referências
 
-> _[Preencher: referências no padrão ABNT, em ordem alfabética.]_
+1. <a id="ref1"></a>INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA (INEP). Censo Escolar da Educação Básica 2024: notas estatísticas. Brasília: Inep, 2025. Disponível em: https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/notas_estatisticas_censo_da_educacao_basica_2024.pdf. Acesso em: 07 jul. 2026. 
 
-[SOBRENOME, Nome. Título. Local: Editora, ano. Disponível em: <URL>. Acesso em: [data].]
+2. <a id="ref2"></a>CANDIA, Jhonatan Jesus. Modelos de las Naciones Unidas como Simulación Educativa. Trabalho de Conclusão de Curso (Licenciatura em Relações Internacionais) – Universidade Federal da Integração Latino-Americana (UNILA), Foz do Iguaçu, 2025. Disponível em: https://dspace.unila.edu.br/items/7e8a3d2f-2665-4d36-b0ec-4e900efde8b2. Acesso em: 07 jul. 2026. 
