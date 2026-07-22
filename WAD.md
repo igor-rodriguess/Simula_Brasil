@@ -58,7 +58,7 @@ O projeto Simula Brasil atua no espaço das simulações de Modelo das Nações 
 
 <div align="center">
   <sub>Figura 1 — Modelo de 5 Forças de Porter</sub><br>
-  <img src="../assets/[IMAGEM].png" width="100%" alt="Modelo de 5 Forças de Porter"><br>
+  <img src="assets/negocios/forcas_poter.jpeg" width="100%" alt="Modelo de 5 Forças de Porter"><br>
   <sup>Fonte:Simula Brasil, 2026.</sup>
 </div>
 
@@ -187,6 +187,14 @@ O sucesso será medido pela implementação real da solução em pelo menos uma 
 ## Introdução ao modelo
 
 O Canvas de Proposta de Valor é a ferramenta que explica por que o cliente escolheria uma organização em vez de outra alternativa disponível. Ele deve responder a perguntas centrais como: qual problema estamos resolvendo? Qual necessidade estamos satisfazendo? Que pacote de produtos ou serviços estamos oferecendo a cada segmento de cliente? O objetivo é garantir que aquilo que a proposta oferece esteja de fato alinhado com o que o cliente precisa, deseja e sofre no seu dia a dia. A ferramenta se estrutura em três elementos: as tarefas do cliente (o que ele está tentando fazer, resolver ou alcançar), as dores (obstáculos, riscos e frustrações enfrentados antes, durante ou depois de tentar realizar essas tarefas) e os ganhos (benefícios e resultados que ele deseja obter).
+
+
+<div align="center">
+  <sub>Figura 1 — Value Proposition Canvas </sub><br>
+  <img src="assets/negocios/canvas_proposta_de_valor.jpeg" width="100%" alt="Value Proposition Canvas"><br>
+  <sup>Fonte:Simula Brasil, 2026.</sup>
+</div>
+ 
 
 ---
 
@@ -395,7 +403,7 @@ Durante essa seção, nossa equipe utilizou o conceito de proto-personas para id
 
 <div align="center">
   <sub>Figura [N] — Persona [PERFIL]</sub><br>
-  <img src="../assets/[IMAGEM].png" width="70%" alt="Persona [PERFIL]"><br>
+  <img src="assets/[IMAGEM].png" width="70%" alt="Persona [PERFIL]"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -460,7 +468,7 @@ Critérios INVEST | <ul><li>I (Independente): [justificar]</li><li>N (Negociáve
 
 <div align="center">
   <sub>Figura [N] — Diagrama de Arquitetura</sub><br>
-  <img src="../assets/[IMAGEM].png" width="70%" alt="Diagrama de Arquitetura"><br>
+  <img src="assets/[IMAGEM].png" width="70%" alt="Diagrama de Arquitetura"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -468,7 +476,7 @@ Critérios INVEST | <ul><li>I (Independente): [justificar]</li><li>N (Negociáve
 
 <div align="center">
   <sub>Figura [N] — Diagrama de Caso de Uso</sub><br>
-  <img src="../assets/[IMAGEM].png" width="70%" alt="Diagrama de Caso de Uso"><br>
+  <img src="assets/[IMAGEM].png" width="70%" alt="Diagrama de Caso de Uso"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -484,7 +492,7 @@ A notação de multiplicidade utilizada segue o padrão (mínimo, máximo), onde
 
 <div align="center">
   <sub>Figura [N] — Diagrama de Classes do Domínio</sub><br>
-  <img src="../assets/[IMAGEM].png" width="100%" alt="Diagrama de Classes do Domínio"><br>
+  <img src="assets/[IMAGEM].png" width="100%" alt="Diagrama de Classes do Domínio"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -503,7 +511,7 @@ Um diagrama de classes arquitetural representa a estrutura estática do sistema 
 
 <div align="center">
   <sub>Figura [N] — Diagrama de Classes Arquitetural [PERFIL]</sub><br>
-  <img src="../assets/[IMAGEM].png" width="100%" alt="Diagrama de Classes Arquitetural"><br>
+  <img src="assets/[IMAGEM].png" width="100%" alt="Diagrama de Classes Arquitetural"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -519,7 +527,7 @@ Um diagrama de classes arquitetural representa a estrutura estática do sistema 
 
 <div align="center">
   <sub>Figura [N] — Diagrama de Sequência — [FLUXO]</sub><br>
-  <img src="../assets/[IMAGEM].png" width="70%" alt="Diagrama de Sequência"><br>
+  <img src="assets/[IMAGEM].png" width="70%" alt="Diagrama de Sequência"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -559,7 +567,7 @@ Wireframes são representações visuais simplificadas de uma interface, utiliza
 
 <div align="center">
   <sub>Figura [N] — [Wireflow/Wireframe] [PERFIL/TELA]</sub><br>
-  <img src="../assets/[IMAGEM].png" alt="[descrição]" width="600"><br>
+  <img src="assets/[IMAGEM].png" alt="[descrição]" width="600"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -573,7 +581,7 @@ Guia de estilos é o documento com as regras do que pode e não pode ser feito p
 
 <div align="center">
   <sub>Figura [N] — Paleta de cores</sub><br>
-  <img src="../assets/[IMAGEM].png" alt="Paleta de cores" width="600"><br>
+  <img src="assets/[IMAGEM].png" alt="Paleta de cores" width="600"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -583,7 +591,7 @@ Guia de estilos é o documento com as regras do que pode e não pode ser feito p
 
 <div align="center">
   <sub>Figura [N] — Tipografia da plataforma</sub><br>
-  <img src="../assets/[IMAGEM].png" alt="Tipografia" width="1200"><br>
+  <img src="assets/[IMAGEM].png" alt="Tipografia" width="1200"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -593,7 +601,7 @@ Guia de estilos é o documento com as regras do que pode e não pode ser feito p
 
 <div align="center">
   <sub>Figura [N] — Iconografia da plataforma</sub><br>
-  <img src="../assets/[IMAGEM].png" alt="Iconografia" width="1100"><br>
+  <img src="assets/[IMAGEM].png" alt="Iconografia" width="1100"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -612,7 +620,7 @@ Guia de estilos é o documento com as regras do que pode e não pode ser feito p
 
 <div align="center">
   <sub>Figura [N] — Protótipo [PERFIL] - [Tela]</sub><br>
-  <img src="../assets/[IMAGEM].png" alt="[descrição]" width="900"><br>
+  <img src="assets/[IMAGEM].png" alt="[descrição]" width="900"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -648,7 +656,7 @@ Guia de estilos é o documento com as regras do que pode e não pode ser feito p
 
 <div align="center">
   <sub>Figura [N] — Modelo de Entidade-Relacionamento (ER)</sub><br>
-  <img src="../assets/[IMAGEM].png" width="90%" alt="Modelo ER"><br>
+  <img src="assets/[IMAGEM].png" width="90%" alt="Modelo ER"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -658,7 +666,7 @@ Guia de estilos é o documento com as regras do que pode e não pode ser feito p
 
 <div align="center">
   <sub>Figura [N] — Diagrama de Entidades-Relacionais (DER) lógico</sub><br>
-  <img src="../assets/[IMAGEM].png" width="80%" alt="DER lógico"><br>
+  <img src="assets/[IMAGEM].png" width="80%" alt="DER lógico"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -774,7 +782,7 @@ Authorization: Bearer <token>
 
 <div align="center">
   <sub>Figura [N] — [descrição]</sub><br>
-  <img src="../assets/[IMAGEM].png" width="80%" alt="[descrição]"><br>
+  <img src="assets/[IMAGEM].png" width="80%" alt="[descrição]"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -852,7 +860,7 @@ Authorization: Bearer <token>
 
 <div align="center">
   <sub>Figura [N] — [descrição da evidência de teste]</sub><br>
-  <img src="../assets/[IMAGEM].png" width="80%" alt="[descrição]"><br>
+  <img src="assets/[IMAGEM].png" width="80%" alt="[descrição]"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -891,7 +899,7 @@ O System Usability Scale (SUS) é um questionário de dez afirmações proposto 
 
 <div align="center">
   <sub>Figura [N] — Pontuação SUS por participante</sub><br>
-  <img src="../assets/[IMAGEM].png" width="100%" alt="Gráfico SUS"><br>
+  <img src="assets/[IMAGEM].png" width="100%" alt="Gráfico SUS"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -967,7 +975,7 @@ O Business Model Canvas, proposto por Osterwalder e Pigneur (2011), é uma ferra
 
 <div align="center">
   <sub>Figura [N] — Business Model Canvas</sub><br>
-  <img src="../assets/[IMAGEM].png" width="600" alt="Business Model Canvas"><br>
+  <img src="assets/[IMAGEM].png" width="600" alt="Business Model Canvas"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
