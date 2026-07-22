@@ -135,8 +135,8 @@ A análise SWOT foi elaborada considerando o posicionamento do Simula Brasil no 
 
 <div align="center">
   <sub>Figura 2 — Análise SWOT</sub><br>
-  <img src="../assets/[IMAGEM].png" width="600" alt="Análise SWOT"><br>
-  <sup>Fonte: Autores, [ANO].</sup>
+  <img src="assets/negocios/analise-swot.jpeg" width="600" alt="Análise SWOT"><br>
+  <sup>Fonte: Autores, 2026.</sup>
 </div>
 
 **Forças (Ambiente interno)**
@@ -313,6 +313,12 @@ A análise demonstra que a proposta de valor do projeto está alinhada às princ
 ### 2.1.5. Matriz de Riscos do Projeto
 
 A Matriz de Riscos é uma ferramenta visual utilizada para priorizar os riscos de um projeto com base em duas dimensões: probabilidade, que mede a chance de um risco ocorrer, e impacto, que representa suas consequências caso se concretize (PROJECT MANAGEMENT INSTITUTE, 2017). A combinação dessas dimensões gera uma classificação geral — alta, média ou baixa — representada por cores, facilitando o foco nos riscos mais críticos e orientando a construção de planos de ação preventivos.
+
+<div align="center">
+  <sub>Figura 3 — Matriz de Riscos</sub><br>
+  <img src="assets/negocios/matriz-de-riscos.jpeg" width="600" alt="Matriz de Riscos"><br>
+  <sup>Fonte: Autores, 2026.</sup>
+</div>
 
 **AM01**
 
