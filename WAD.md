@@ -479,6 +479,77 @@
 
 &ensp; As histórias foram classificadas em dois níveis de prioridade. São de alta prioridade as que compõem o fluxo essencial de cada persona: aderir ao projeto, organizar o fórum, preparar-se e ter acesso aos eventos, e mentorar. São de média prioridade as que complementam esse fluxo com comprovação de impacto, inscrição em eventos parceiros e reconhecimento formal do voluntariado.
 
+### 2.3.1. User Stories: Marta Aparecida — gestora escolar (decisora)
+ 
+<div align="center">
+  <sub>Quadro 1 — Primeira User Story</sub>
+</div>
+
+Identificação | US01 – Solicitar piloto documentado (Alta prioridade)
+--- | ---
+Persona | Marta Aparecida
+User Story | Como gestora escolar responsável pela decisão de adesão, quero solicitar a implementação de um piloto documentado do Simula Brasil na minha escola e acompanhar seus resultados para decidir, com risco e custo praticamente nulos, se aprovo a expansão do projeto.
+Critério de aceite 1 | CR1: Dado que a gestora acessa a opção "Solicitar piloto", quando a tela for carregada então o sistema deve exibir o formulário de solicitação com os campos obrigatórios: nome da escola, rede de ensino, município, número estimado de alunos participantes e professor responsável.
+Critério de aceite 2 | CR2: Dado que a gestora está no formulário, quando informar o número estimado de alunos participantes então o sistema deve exigir um valor numérico inteiro maior que zero.
+Critério de aceite 3 | CR3: Dado que a gestora está no formulário, quando tentar enviar sem preencher os campos obrigatórios então o sistema deve exibir mensagens de validação indicando os campos pendentes.
+Critério de aceite 4 | CR4: Dado que a gestora preencheu corretamente todos os campos obrigatórios, quando confirmar a solicitação então o sistema deve registrar o piloto com status "Solicitado" e exibir uma mensagem de confirmação informando que a adesão não tem custo para a escola.
+Critério de aceite 5 | CR5: Dado que a escola já possui um piloto solicitado ou em andamento, quando a gestora tentar abrir uma nova solicitação então o sistema deve impedir a duplicidade e direcioná-la para o acompanhamento do piloto existente.
+Critério de aceite 6 | CR6: Dado que existe um piloto registrado para a escola, quando a gestora acessar "Acompanhar piloto" então o sistema deve exibir o status atual (Solicitado, Em preparação, Em execução ou Concluído) e as etapas já cumpridas.
+Critério de aceite 7 | CR7: Dado que o piloto está em execução ou concluído, quando a gestora acessar o acompanhamento então o sistema deve exibir os resultados registrados: alunos participantes, professores capacitados e simulações realizadas.
+Critério de aceite 8 | CR8: Dado que o piloto foi concluído, quando a gestora selecionar "Aprovar expansão" ou "Encerrar participação" então o sistema deve registrar a decisão e exibir uma mensagem de confirmação.
+Critério de aceite 9 | CR9: Dado que o piloto ainda não foi concluído, quando a gestora tentar registrar a decisão de expansão então o sistema deve impedir a ação e informar a etapa pendente.
+Critério de aceite 10 | CR10: Dado que ocorre uma falha ao registrar a solicitação, quando a gestora confirmar o envio então o sistema deve exibir uma mensagem de erro clara e manter os dados já preenchidos no formulário.
+Critérios INVEST | <ul><li>I (Independente): depende apenas do cadastro da escola e da gestora; não exige que a geração do fórum (US04) esteja pronta para ser solicitada.</li><li>N (Negociável): os campos do formulário e os nomes dos status do piloto podem ser ajustados sem alterar o objetivo de reduzir o risco percebido pela gestora.</li><li>V (Valiosa): ataca a força mais intensa das 5 Forças de Porter (poder de barganha das escolas) e executa o piloto guiado previsto no plano de ação do risco AM03, ao permitir que a gestora teste o projeto antes de se comprometer.</li><li>E (Estimável): escopo fechado em um formulário, uma tela de acompanhamento e um registro de decisão.</li><li>S (Small/Pequena): cabe em uma sprint, dividida em solicitação, acompanhamento e decisão.</li><li>T (Testável): os critérios cobrem validação de campos, duplicidade, exibição de status, decisão dentro e fora do prazo e tratamento de erro.</li></ul>
+ 
+<div align="center">
+  <sup>Fonte: Autores, 2026.</sup>
+</div>
+<br>
+<div align="center">
+  <sub>Quadro 2 — Segunda User Story</sub>
+</div>
+
+Identificação | US02 – Acessar kit de implementação e capacitação gratuita (Alta prioridade)
+--- | ---
+Persona | Marta Aparecida
+User Story | Como gestora escolar, quero acessar o kit de implementação pronto e o cronograma de capacitação gratuita de professores para viabilizar a adoção do projeto sem custo extra e sem sobrecarregar minha equipe.
+Critério de aceite 1 | CR1: Dado que a gestora está autenticada, quando acessar "Kit de implementação" então o sistema deve exibir a lista de materiais disponíveis: guia de implementação, modelo de cronograma e documento de alinhamento com a Base Nacional Comum Curricular (BNCC).
+Critério de aceite 2 | CR2: Dado que a lista de materiais foi exibida, quando a gestora selecionar um material então o sistema deve permitir a visualização on-line e o download em PDF, para uso sem conexão contínua.
+Critério de aceite 3 | CR3: Dado que a gestora acessa o kit ou a capacitação, quando a tela for carregada então o sistema deve exibir, em cada item, a indicação de que o material ou a turma é gratuito.
+Critério de aceite 4 | CR4: Dado que existem turmas de capacitação abertas, quando a gestora acessar "Capacitação de professores" então o sistema deve exibir o cronograma com datas, carga horária e formato de cada turma.
+Critério de aceite 5 | CR5: Dado que a gestora está no cronograma, quando indicar um professor da escola para uma turma então o sistema deve registrar a indicação e exibir uma mensagem de confirmação.
+Critério de aceite 6 | CR6: Dado que o professor já foi indicado para a mesma turma, quando a gestora tentar indicá-lo novamente então o sistema deve impedir a duplicidade e informar que a indicação já existe.
+Critério de aceite 7 | CR7: Dado que não existem turmas de capacitação abertas, quando a gestora acessar o cronograma então o sistema deve informar que não há turmas disponíveis e permitir o registro de interesse na próxima turma.
+Critério de aceite 8 | CR8: Dado que a gestora indicou professores, quando acessar "Capacitação de professores" então o sistema deve exibir o andamento de cada indicado (Não iniciado, Em andamento ou Concluído).
+Critério de aceite 9 | CR9: Dado que ocorre uma falha ao carregar os materiais ou o cronograma, quando a gestora acessar a funcionalidade então o sistema deve exibir uma mensagem de erro clara informando que não foi possível carregar os dados.
+Critérios INVEST | <ul><li>I (Independente): depende apenas de materiais e turmas previamente cadastrados; pode ser entregue antes do piloto (US01) e da geração do fórum (US04).</li><li>N (Negociável): a composição do kit e o formato do cronograma podem mudar conforme a validação com as primeiras escolas.</li><li>V (Valiosa): responde às duas dores centrais da persona, verba e tempo da equipe, tornando visível que o custo de adesão é próximo de zero.</li><li>E (Estimável): escopo limitado a listagem e download de materiais, exibição do cronograma e indicação de professores.</li><li>S (Small/Pequena): cabe em uma sprint, dividida em kit de materiais e capacitação.</li><li>T (Testável): os critérios cobrem listagem, download, indicação, duplicidade, ausência de turmas e tratamento de erro.</li></ul>
+ 
+<div align="center">
+  <sup>Fonte: Autores, 2026.</sup>
+</div>
+<br>
+<div align="center">
+  <sub>Quadro 3 — Terceira User Story</sub>
+</div>
+
+Identificação | US03 – Emitir relatório de impacto e certificado institucional (Média prioridade)
+--- | ---
+Persona | Marta Aparecida
+User Story | Como gestora escolar cobrada por resultados, quero gerar o relatório de impacto do projeto na minha escola e o certificado institucional de participação para apresentar provas concretas à comunidade escolar e à secretaria de educação.
+Critério de aceite 1 | CR1: Dado que a escola possui ao menos uma simulação realizada, quando a gestora acessar "Impacto da escola" então o sistema deve exibir os indicadores consolidados: alunos participantes, professores capacitados, simulações realizadas e alunos apoiados pelo fundo de financiamento.
+Critério de aceite 2 | CR2: Dado que a gestora está na tela de impacto, quando definir um período com data inicial e data final então o sistema deve exibir apenas os indicadores do intervalo informado.
+Critério de aceite 3 | CR3: Dado que a gestora informa uma data inicial posterior à data final, quando aplicar o período então o sistema deve exibir uma mensagem de validação e não atualizar os indicadores.
+Critério de aceite 4 | CR4: Dado que os indicadores foram exibidos, quando a gestora selecionar "Gerar relatório" então o sistema deve gerar um arquivo PDF com os indicadores do período e a seção de alinhamento com a BNCC.
+Critério de aceite 5 | CR5: Dado que o piloto da escola foi concluído, quando a gestora solicitar o certificado institucional então o sistema deve gerar o certificado com nome da escola, período de participação e código de verificação.
+Critério de aceite 6 | CR6: Dado que o piloto da escola ainda não foi concluído, quando a gestora solicitar o certificado institucional então o sistema deve impedir a emissão e informar a etapa pendente.
+Critério de aceite 7 | CR7: Dado que a escola ainda não possui simulações realizadas, quando a gestora acessar "Impacto da escola" então o sistema deve informar que não há dados disponíveis.
+Critério de aceite 8 | CR8: Dado que ocorre uma falha ao gerar o relatório ou o certificado, quando a gestora realizar a ação então o sistema deve exibir uma mensagem de erro clara.
+Critérios INVEST | <ul><li>I (Independente): consome dados já registrados pelas demais histórias, mas pode ser desenvolvida e testada com dados de exemplo, sem alterar outras funcionalidades.</li><li>N (Negociável): os indicadores exibidos e o layout do relatório podem ser ajustados conforme o que secretarias e patrocinadores pedirem.</li><li>V (Valiosa): entrega a prova concreta que a persona exige e materializa o painel de métricas de impacto previsto no plano de ação da oportunidade OP03 da Matriz de Riscos, útil também para a aproximação com secretarias de educação (OP02).</li><li>E (Estimável): escopo fechado em uma tela de indicadores, um filtro de período e dois documentos gerados.</li><li>S (Small/Pequena): cabe em uma sprint, dividida em painel, relatório e certificado.</li><li>T (Testável): os critérios cobrem exibição de indicadores, período inválido, geração dos documentos, bloqueio do certificado e ausência de dados.</li></ul>
+ 
+<div align="center">
+  <sup>Fonte: Autores, 2026.</sup>
+</div>
+
 # <a name="c3"></a>3. Projeto da Aplicação Web
 
 ## 3.1. Requisitos do Sistema
