@@ -452,7 +452,7 @@ Kauê só se engaja de verdade depois de ver alguém parecido com ele participan
 ### 2.2.4 Persona - Beatriz Costa - A Aluna que Teve Chances (usuário final)
 
 <div align="center">
-  <sub>Figura 7 — Beatriz Costa - A aluna que teve chances (usuário final)</sub><br>
+  <sub>Figura 8 — Beatriz Costa - A aluna que teve chances (usuário final)</sub><br>
   <img src="assets/personas/Beatriz_costa.png" width="70%" alt="Beatriz Costa - A aluna que teve chances (usuário final)"><br>
   <sup>Fonte: Simula Brasil, 2026.</sup>
 </div>
@@ -526,7 +526,7 @@ Critérios INVEST | <ul><li>I (Independente): [justificar]</li><li>N (Negociáve
 > _[Preencher: descrição do padrão arquitetural adotado e responsabilidade de cada camada.]_
 
 <div align="center">
-  <sub>Figura 8 — Diagrama de Arquitetura</sub><br>
+  <sub>Figura 9 — Diagrama de Arquitetura</sub><br>
   <img src="assets/[IMAGEM].png" width="70%" alt="Diagrama de Arquitetura"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
@@ -534,7 +534,7 @@ Critérios INVEST | <ul><li>I (Independente): [justificar]</li><li>N (Negociáve
 ### 3.2.2. Diagrama de Casos de Uso
 
 <div align="center">
-  <sub>Figura 9 — Diagrama de Caso de Uso</sub><br>
+  <sub>Figura 10 — Diagrama de Caso de Uso</sub><br>
   <img src="assets/[IMAGEM].png" width="70%" alt="Diagrama de Caso de Uso"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
@@ -550,7 +550,7 @@ A notação de multiplicidade utilizada segue o padrão (mínimo, máximo), onde
 - 1..* indica participação obrigatória e múltipla (equivalente a 1,N)
 
 <div align="center">
-  <sub>Figura 10 — Diagrama de Classes do Domínio</sub><br>
+  <sub>Figura 11 — Diagrama de Classes do Domínio</sub><br>
   <img src="assets/[IMAGEM].png" width="100%" alt="Diagrama de Classes do Domínio"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
@@ -569,7 +569,7 @@ Um diagrama de classes arquitetural representa a estrutura estática do sistema 
 > _[Opcional: criar um diagrama por perfil de usuário caso a estrutura completa fique extensa.]_
 
 <div align="center">
-  <sub>Figura 11 — Diagrama de Classes Arquitetural [PERFIL]</sub><br>
+  <sub>Figura 12 — Diagrama de Classes Arquitetural [PERFIL]</sub><br>
   <img src="assets/[IMAGEM].png" width="100%" alt="Diagrama de Classes Arquitetural"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
@@ -585,7 +585,7 @@ Um diagrama de classes arquitetural representa a estrutura estática do sistema 
 > _[Preencher.]_
 
 <div align="center">
-  <sub>Figura 12 — Diagrama de Sequência — [FLUXO]</sub><br>
+  <sub>Figura 13 — Diagrama de Sequência — [FLUXO]</sub><br>
   <img src="assets/[IMAGEM].png" width="70%" alt="Diagrama de Sequência"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
@@ -625,7 +625,7 @@ Wireframes são representações visuais simplificadas de uma interface, utiliza
 > _[Preencher: descrição do fluxo/wireflow e de cada tela.]_
 
 <div align="center">
-  <sub>Figura 13 — [Wireflow/Wireframe] [PERFIL/TELA]</sub><br>
+  <sub>Figura 14 — [Wireflow/Wireframe] [PERFIL/TELA]</sub><br>
   <img src="assets/[IMAGEM].png" alt="[descrição]" width="600"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
@@ -648,7 +648,7 @@ A identidade do Simula Brasil parte do próprio logotipo: o globo com louros rem
 ### 3.4.1 Cores
 
 <div align="center">
-  <sub>Figura 14 — Paleta de cores</sub><br>
+  <sub>Figura 15 — Paleta de cores</sub><br>
   <img src="assets/guia-de-estilos/paleta-de-cores.png" alt="Paleta de cores" width="600"><br>
   <sup>Fonte: Autores, 2026.</sup>
 </div>
@@ -692,7 +692,7 @@ A paleta foi extraída do logotipo. O azul é a cor da marca; verde, dourado e r
 ### 3.4.2 Tipografia
 
 <div align="center">
-  <sub>Figura 15 — Tipografia da plataforma</sub><br>
+  <sub>Figura 16 — Tipografia da plataforma</sub><br>
   <img src="assets/guia-de-estilos/tipografia.png" alt="Tipografia" width="600"><br>
   <sup>Fonte: Autores, 2026.</sup>
 </div>
@@ -714,7 +714,7 @@ O corpo do texto nunca fica abaixo de 16 px. O texto é alinhado à esquerda, a 
 ### 3.4.3 Iconografia e imagens
 
 <div align="center">
-  <sub>Figura 16 — Iconografia da plataforma</sub><br>
+  <sub>Figura 17 — Iconografia da plataforma</sub><br>
   <img src="assets/[IMAGEM].png" alt="Iconografia" width="1100"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
@@ -733,7 +733,7 @@ O corpo do texto nunca fica abaixo de 16 px. O texto é alinhado à esquerda, a 
 ### 3.5.1.1 [Nome da Tela]
 
 <div align="center">
-  <sub>Figura 17 — Protótipo [PERFIL] - [Tela]</sub><br>
+  <sub>Figura 18 — Protótipo [PERFIL] - [Tela]</sub><br>
   <img src="assets/[IMAGEM].png" alt="[descrição]" width="900"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
@@ -769,7 +769,7 @@ O corpo do texto nunca fica abaixo de 16 px. O texto é alinhado à esquerda, a 
 > _[Preencher: descrição do modelo conceitual (DEVMEDIA, [s. d.]).]_
 
 <div align="center">
-  <sub>Figura 18 — Modelo de Entidade-Relacionamento (ER)</sub><br>
+  <sub>Figura 19 — Modelo de Entidade-Relacionamento (ER)</sub><br>
   <img src="assets/[IMAGEM].png" width="90%" alt="Modelo ER"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
@@ -779,7 +779,7 @@ O corpo do texto nunca fica abaixo de 16 px. O texto é alinhado à esquerda, a 
 > _[Preencher: descrição do modelo lógico (atributos, PKs, FKs, cardinalidades, normalização).]_
 
 <div align="center">
-  <sub>Figura 19 — Diagrama de Entidades-Relacionais (DER) lógico</sub><br>
+  <sub>Figura 20 — Diagrama de Entidades-Relacionais (DER) lógico</sub><br>
   <img src="assets/[IMAGEM].png" width="80%" alt="DER lógico"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
@@ -895,7 +895,7 @@ Authorization: Bearer <token>
 > _[Preencher: configuração do servidor, camada de persistência, endpoints, validações e testes, com figuras de evidência.]_
 
 <div align="center">
-  <sub>Figura 20 — [descrição]</sub><br>
+  <sub>Figura 21 — [descrição]</sub><br>
   <img src="assets/[IMAGEM].png" width="80%" alt="[descrição]"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
@@ -973,7 +973,7 @@ Authorization: Bearer <token>
 > _[Preencher: output de `npm run test`, relatório de cobertura e mapeamento CT → RN → RF, com figuras.]_
 
 <div align="center">
-  <sub>Figura 21 — [descrição da evidência de teste]</sub><br>
+  <sub>Figura 22 — [descrição da evidência de teste]</sub><br>
   <img src="assets/[IMAGEM].png" width="80%" alt="[descrição]"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
@@ -1012,7 +1012,7 @@ O System Usability Scale (SUS) é um questionário de dez afirmações proposto 
 | **Média geral** | **[média]** | **[classificação]** |
 
 <div align="center">
-  <sub>Figura 22 — Pontuação SUS por participante</sub><br>
+  <sub>Figura 23 — Pontuação SUS por participante</sub><br>
   <img src="assets/[IMAGEM].png" width="100%" alt="Gráfico SUS"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
@@ -1088,7 +1088,7 @@ O System Usability Scale (SUS) é um questionário de dez afirmações proposto 
 O Business Model Canvas, proposto por Osterwalder e Pigneur (2011), é uma ferramenta estratégica que representa a lógica de criação, entrega e captura de valor de um negócio por meio de nove blocos fundamentais.
 
 <div align="center">
-  <sub>Figura 23 — Business Model Canvas</sub><br>
+  <sub>Figura 24 — Business Model Canvas</sub><br>
   <img src="assets/[IMAGEM].png" width="600" alt="Business Model Canvas"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
