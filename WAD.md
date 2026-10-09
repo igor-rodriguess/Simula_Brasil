@@ -479,7 +479,7 @@
 
 &ensp; As histórias foram classificadas em dois níveis de prioridade. São de alta prioridade as que compõem o fluxo essencial de cada persona: aderir ao projeto, organizar o fórum, preparar-se e ter acesso aos eventos, e mentorar. São de média prioridade as que complementam esse fluxo com comprovação de impacto, inscrição em eventos parceiros e reconhecimento formal do voluntariado.
 
-### 2.3.1. User Stories: Marta Aparecida — gestora escolar (decisora)
+### 2.3.1. Marta Aparecida — gestora escolar (decisora)
  
 <div align="center">
   <sub>Quadro 1 — Primeira User Story</sub>
@@ -545,6 +545,81 @@ Critério de aceite 6 | CR6: Dado que o piloto da escola ainda não foi concluí
 Critério de aceite 7 | CR7: Dado que a escola ainda não possui simulações realizadas, quando a gestora acessar "Impacto da escola" então o sistema deve informar que não há dados disponíveis.
 Critério de aceite 8 | CR8: Dado que ocorre uma falha ao gerar o relatório ou o certificado, quando a gestora realizar a ação então o sistema deve exibir uma mensagem de erro clara.
 Critérios INVEST | <ul><li>I (Independente): consome dados já registrados pelas demais histórias, mas pode ser desenvolvida e testada com dados de exemplo, sem alterar outras funcionalidades.</li><li>N (Negociável): os indicadores exibidos e o layout do relatório podem ser ajustados conforme o que secretarias e patrocinadores pedirem.</li><li>V (Valiosa): entrega a prova concreta que a persona exige e materializa o painel de métricas de impacto previsto no plano de ação da oportunidade OP03 da Matriz de Riscos, útil também para a aproximação com secretarias de educação (OP02).</li><li>E (Estimável): escopo fechado em uma tela de indicadores, um filtro de período e dois documentos gerados.</li><li>S (Small/Pequena): cabe em uma sprint, dividida em painel, relatório e certificado.</li><li>T (Testável): os critérios cobrem exibição de indicadores, período inválido, geração dos documentos, bloqueio do certificado e ausência de dados.</li></ul>
+ 
+<div align="center">
+  <sup>Fonte: Autores, 2026.</sup>
+</div>
+
+### 2.3.2. Rodrigo Santos — professor organizador (quem executa)
+ 
+<div align="center">
+  <sub>Quadro 5 — Quarta User Story</sub>
+</div>
+
+Identificação | US04 – Gerar estrutura automática do fórum (Alta prioridade)
+--- | ---
+Persona | Rodrigo Santos
+User Story | Como professor organizador do fórum, quero informar os dados básicos do evento (número de participantes, escolas envolvidas e nível de experiência dos delegados) para que os agentes de IA gerem automaticamente a estrutura completa do fórum.
+Critério de aceite 1 | CR1: Dado que o professor acessa a opção "Criar fórum", quando a tela for carregada então o sistema deve exibir o formulário com os campos nome do evento, data prevista, número de participantes, escolas envolvidas e nível de experiência dos delegados.
+Critério de aceite 2 | CR2: Dado que o professor está no formulário, quando preencher o número de participantes então o sistema deve exigir um valor numérico inteiro maior que zero.
+Critério de aceite 3 | CR3: Dado que o professor está no formulário, quando preencher o nível de experiência dos delegados então o sistema deve exigir a seleção de uma das opções: iniciante, intermediário ou avançado.
+Critério de aceite 4 | CR4: Dado que o professor está no formulário, quando tentar enviar sem preencher os campos obrigatórios (nome do evento, data prevista, número de participantes, escolas envolvidas e nível de experiência) então o sistema deve exibir mensagens de validação indicando os campos pendentes.
+Critério de aceite 5 | CR5: Dado que o professor preencheu corretamente todos os campos obrigatórios, quando solicitar a geração então o sistema deve registrar o pedido com status "Em processamento" e informar que ele será avisado quando a estrutura estiver pronta.
+Critério de aceite 6 | CR6: Dado que a geração está em processamento, quando o professor sair da página e retornar depois então o sistema deve exibir o status atual do pedido, sem exigir novo preenchimento.
+Critério de aceite 7 | CR7: Dado que a geração foi concluída, quando o professor acessar o fórum então o sistema deve exibir a estrutura completa (comitês, distribuição de países, diretorias, temáticas e cenários de crise) com status "Rascunho – aguardando revisão".
+Critério de aceite 8 | CR8: Dado que a estrutura está em rascunho, quando um aluno acessar a plataforma então o sistema não deve exibir nenhum conteúdo gerado que ainda não tenha sido aprovado pelo professor.
+Critério de aceite 9 | CR9: Dado que a geração falha, quando o processamento for encerrado então o sistema deve informar a falha, manter os dados informados no formulário e permitir uma nova tentativa.
+Critérios INVEST | <ul><li>I (Independente): depende apenas do cadastro do professor e da escola; é o ponto de partida das histórias de revisão (US05), não o contrário.</li><li>N (Negociável): os campos de entrada e a forma de aviso de conclusão podem ser ajustados; o que não se negocia é a geração sem montagem manual e o processamento assíncrono, previsto no plano de ação do risco AM04 (conectividade limitada em escolas periféricas).</li><li>V (Valiosa): entrega o diferencial do projeto, reduzir de semanas para minutos a montagem do fórum, e cumpre diretamente o primeiro critério de sucesso da seção 2.1.3.</li><li>E (Estimável): escopo delimitado em um formulário, um pedido assíncrono com acompanhamento de status e uma tela de resultado.</li><li>S (Small/Pequena): cabe em uma sprint se a orquestração dos agentes for tratada como tarefa técnica separada da interface.</li><li>T (Testável): os critérios cobrem validação de entrada, status de processamento, exibição do rascunho, bloqueio de visibilidade aos alunos e falha de geração.</li></ul>
+ 
+<div align="center">
+  <sup>Fonte: Autores, 2026.</sup>
+</div>
+<br>
+<div align="center">
+  <sub>Quadro 6 — Quinta User Story</sub>
+</div>
+
+Identificação | US05 – Revisar, ajustar e publicar a estrutura gerada por IA (Alta prioridade)
+--- | ---
+Persona | Rodrigo Santos
+User Story | Como professor organizador, quero revisar e ajustar a distribuição de países, comitês e diretorias, assim como as temáticas e os cenários de crise gerados pelos agentes de IA, e então publicá-los para os alunos, para garantir que o fórum esteja adequado à realidade da minha turma e que cada delegado saiba sua atribuição com antecedência.
+Critério de aceite 1 | CR1: Dado que existe uma estrutura em rascunho, quando o professor acessar "Revisar fórum" então o sistema deve exibir, em seções separadas, comitês, distribuição de países, diretorias, temáticas e cenários de crise, cada uma marcada como "Pendente de revisão".
+Critério de aceite 2 | CR2: Dado que o professor está na seção de distribuição, quando alterar o país ou o comitê atribuído a um delegado então o sistema deve salvar o ajuste e atualizar a distribuição exibida.
+Critério de aceite 3 | CR3: Dado que o ajuste atribui o mesmo país a dois delegados do mesmo comitê, quando o professor tentar salvar então o sistema deve impedir a alteração e indicar o conflito.
+Critério de aceite 4 | CR4: Dado que o professor está na seção de diretorias, quando alterar a composição de uma diretoria então o sistema deve salvar a nova composição.
+Critério de aceite 5 | CR5: Dado que o professor está na seção de temáticas ou de cenários de crise, quando editar o texto de um item então o sistema deve salvar a versão editada e registrá-la como revisada pelo professor.
+Critério de aceite 6 | CR6: Dado que o professor considera uma temática ou um cenário de crise inadequado, quando solicitar nova geração daquele item então o sistema deve gerar uma nova versão apenas do item selecionado, preservando os demais ajustes já feitos.
+Critério de aceite 7 | CR7: Dado que o professor concluiu a revisão de uma seção, quando marcá-la como aprovada então o sistema deve registrar a aprovação e atualizar a marcação da seção.
+Critério de aceite 8 | CR8: Dado que existem seções ainda pendentes de aprovação, quando o professor tentar publicar o fórum então o sistema deve impedir a publicação e indicar as seções pendentes.
+Critério de aceite 9 | CR9: Dado que todas as seções foram aprovadas, quando o professor selecionar "Publicar para os alunos" então o sistema deve solicitar confirmação antes de publicar.
+Critério de aceite 10 | CR10: Dado que o professor confirmou a publicação, quando o processo for concluído então o sistema deve tornar visíveis a cada aluno o seu país, o seu comitê e a temática correspondente, manter os cenários de crise visíveis apenas ao professor e às diretorias, e exibir uma mensagem de confirmação.
+Critério de aceite 11 | CR11: Dado que o fórum foi publicado, quando o professor solicitar a exportação então o sistema deve gerar a estrutura em PDF e a distribuição em CSV para uso sem conexão.
+Critério de aceite 12 | CR12: Dado que ocorre uma falha ao salvar um ajuste ou ao publicar, quando o professor realizar a ação então o sistema deve exibir uma mensagem de erro clara e preservar os ajustes já salvos.
+Critérios INVEST | <ul><li>I (Independente): depende apenas da existência de uma estrutura gerada (US04); revisão e publicação não exigem as funcionalidades de capacitação nem de financiamento.</li><li>N (Negociável): o nível de edição permitido em cada seção e os formatos de exportação podem ser ajustados com os professores do piloto.</li><li>V (Valiosa): é a camada de curadoria humana prevista no plano de ação do risco AM01 (conteúdo pedagogicamente inadequado gerado por IA) e o que protege a credibilidade do projeto no primeiro uso.</li><li>E (Estimável): escopo definido em cinco seções de revisão, uma regra de aprovação, uma ação de publicação e uma exportação.</li><li>S (Small/Pequena): é a maior história do conjunto; cabe em uma sprint se dividida em três subtarefas (ajuste da distribuição, revisão de temáticas e crises, publicação e exportação).</li><li>T (Testável): os critérios cobrem ajuste, conflito de país, nova geração por item, bloqueio de publicação, visibilidade por perfil e tratamento de erro.</li></ul>
+ 
+<div align="center">
+  <sup>Fonte: Autores, 2026.</sup>
+</div>
+<br>
+<div align="center">
+  <sub>Quadro 7 — Sexta User Story</sub>
+</div>
+
+Identificação | US06 – Acessar trilha de capacitação e rede de mentores (Alta prioridade)
+--- | ---
+Persona | Rodrigo Santos
+User Story | Como professor sem experiência prévia em MUN, quero acessar a trilha de capacitação e o manual do facilitador, além de contato com a rede de mentores formada por ex-alunos do projeto, para me sentir apoiado na condução da simulação.
+Critério de aceite 1 | CR1: Dado que o professor está autenticado, quando acessar "Capacitação" então o sistema deve exibir a trilha organizada em módulos sequenciais, com a indicação de progresso de cada módulo.
+Critério de aceite 2 | CR2: Dado que o professor está em um módulo, quando concluí-lo então o sistema deve registrar a conclusão e liberar o módulo seguinte.
+Critério de aceite 3 | CR3: Dado que o professor interrompeu a trilha, quando retornar à capacitação então o sistema deve retomar do ponto em que ele parou.
+Critério de aceite 4 | CR4: Dado que o professor acessa "Manual do facilitador", quando a tela for carregada então o sistema deve permitir a visualização on-line e o download do manual em PDF.
+Critério de aceite 5 | CR5: Dado que existem mentores com perfil ativo, quando o professor acessar "Rede de mentores" então o sistema deve exibir a lista de mentores com nome, experiência em MUN e disponibilidade.
+Critério de aceite 6 | CR6: Dado que o professor selecionou um mentor, quando enviar um pedido de mentoria com a descrição da dúvida então o sistema deve registrar o pedido com status "Aguardando resposta" e exibir uma mensagem de confirmação.
+Critério de aceite 7 | CR7: Dado que o professor está no pedido de mentoria, quando tentar enviar sem preencher a descrição da dúvida então o sistema deve exibir mensagem de validação indicando o campo pendente.
+Critério de aceite 8 | CR8: Dado que não existem mentores disponíveis, quando o professor acessar "Rede de mentores" então o sistema deve informar a indisponibilidade e permitir o registro do pedido em fila de espera.
+Critério de aceite 9 | CR9: Dado que o professor concluiu todos os módulos da trilha, quando solicitar o certificado então o sistema deve emitir o certificado de facilitação em seu nome.
+Critério de aceite 10 | CR10: Dado que ocorre uma falha ao carregar a trilha ou a rede de mentores, quando o professor acessar a funcionalidade então o sistema deve exibir uma mensagem de erro clara.
+Critérios INVEST | <ul><li>I (Independente): a trilha e o manual não dependem do fórum; a rede de mentores depende apenas de existirem mentores ativos (US10), e o cenário sem mentores está coberto pelo CR8.</li><li>N (Negociável): o número de módulos, o formato do manual e o canal de contato com o mentor podem ser definidos com os professores do piloto.</li><li>V (Valiosa): resolve a insegurança técnica da persona e o medo de conduzir a atividade sozinho, pré-condição para que o professor aceite organizar o primeiro fórum.</li><li>E (Estimável): escopo fechado em trilha com progresso, manual para download e pedido de mentoria.</li><li>S (Small/Pequena): cabe em uma sprint, dividida em trilha e manual, e rede de mentores.</li><li>T (Testável): os critérios cobrem progresso, retomada, download, pedido de mentoria, ausência de mentores e emissão de certificado.</li></ul>
  
 <div align="center">
   <sup>Fonte: Autores, 2026.</sup>
