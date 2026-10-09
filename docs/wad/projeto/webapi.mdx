@@ -1,0 +1,54 @@
+---
+title: "3.7. WebAPI e endpoints"
+sidebar_position: 7
+---
+
+A Web API é um conjunto de regras e protocolos que permite a comunicação entre sistemas por meio da web (FIELDING, 2000). A API segue o padrão REST, utilizando JSON para troca de dados. Os endpoints são os pontos de acesso disponibilizados pela API (RICHARDSON; RUBY, 2007).
+
+> Link da documentação WebAPI: [URL]
+
+> _[Preencher um bloco por requisito funcional/endpoint, seguindo o modelo abaixo.]_
+
+## RF[NNN] - [Nome do requisito]
+
+> **RF[NNN]:** [Descrição do requisito.]
+
+## `[MÉTODO] /[endpoint]`
+
+**Descrição:** [descrição da operação.]
+
+**Headers:**
+```
+Content-Type: application/json
+Authorization: Bearer <token>
+```
+
+**Path Params:**
+
+| Param | Tipo | Descrição |
+|---|---|---|
+| `[param]` | [tipo] | [descrição] |
+
+**Request Body:**
+
+| Campo | Tipo | Obrigatório | Descrição |
+|---|---|---|---|
+| `[campo]` | [tipo] | [Sim/Não] | [descrição] |
+
+**Responses:**
+
+`200 OK` / `201 Created`
+```json
+{ }
+```
+
+`400 Bad Request` / `404 Not Found` / `409 Conflict` / `422 Unprocessable Entity` / `500 Internal Server Error`
+```json
+{ "error": "[mensagem]" }
+```
+
+## Resumo dos endpoints
+
+| RF | Endpoint | Método | Descrição resumida |
+|---|---|---|---|
+| [RFxxx] | `[/endpoint]` | [método] | [descrição] |

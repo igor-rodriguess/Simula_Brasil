@@ -7,6 +7,8 @@
 
 [Igor da Silva Rodrigues](https://www.linkedin.com/in/igor-dasilva-rodrigues/)
 
+[Júlia Amanda Gregate de Araujo](https://www.linkedin.com/in/julia-amanda-gregate-de-araujo/)
+
 [Julia Jesus Bezerra](https://www.linkedin.com/in/julia-jesus-bezerra-a872b5321/)
 
 ## Sumário
@@ -42,24 +44,30 @@ A segunda frente é uma plataforma voltada à formação e ao acesso de estudant
 
 Além de reduzir drasticamente o tempo e o esforço de organização, a solução torna viável que qualquer escola, pública ou privada, com ou sem experiência prévia em MUN, realize seu próprio fórum, ao mesmo tempo em que oferece a estudantes de baixa renda o preparo e o acesso necessários para participar. Dessa forma, o Simula Brasil busca romper a barreira que hoje restringe as simulações da ONU à elite, ampliando o alcance de uma formação que desenvolve pensamento crítico, oratória e cidadania justamente entre os jovens que mais têm a ganhar com ela.
 
-# <a name="c2"></a>
-
-## 2. Visão Geral da Aplicação Web
+## <a name="c2"></a>2. Visão Geral da Aplicação Web
 
 ## 2.1. Escopo do Projeto
+
+O escopo do Simula Brasil é estruturado a partir de uma abordagem que integra a estratégia de negócios, o mapeamento de valor centrado nos usuários e a antecipação de riscos técnicos e institucionais. Como o projeto não atende a um cliente único, mas depende da adesão voluntária de escolas públicas, esta seção se desdobra em cinco análises interconectadas que sustentam a viabilidade da plataforma junto a gestores, professores e estudantes da rede pública.
+
+Inicialmente, o Modelo de 5 Forças de Porter contextualiza o espaço das simulações da ONU (Model United Nations, MUN) e evidencia que, embora a rivalidade direta seja baixa, o poder de barganha das escolas públicas é alto, já que para elas o custo de não aderir ao projeto é praticamente nulo. Na sequência, a Análise SWOT (Forças, Fraquezas, Oportunidades e Ameaças) confronta o principal diferencial do projeto, a automação da montagem de fóruns por agentes de inteligência artificial (IA), com suas fragilidades: a ausência de validação de mercado e a dependência de recursos externos para o fundo de financiamento estudantil. A mesma análise dimensiona a oportunidade a partir do Censo Escolar 2024, segundo o qual 83,1% das matrículas do ensino médio estão na rede estadual pública.<sup>[1](#ref1)</sup>
+
+Com base nesses diagnósticos, a seção de Solução detalha as duas frentes do projeto, a aplicação que gera automaticamente a estrutura do fórum e a plataforma de formação e acesso para estudantes de baixa renda, além da arquitetura adotada, com React, Node.js, PostgreSQL e agentes orquestrados em Python com LangGraph. O Value Proposition Canvas conecta essas funcionalidades às dores de três segmentos distintos (gestores escolares, professores e alunos) e mostra que o maior encaixe está nos estudantes, enquanto o maior risco de desencaixe está nos gestores, cujo ceticismo exige provas concretas de impacto. Por fim, a Matriz de Riscos antecipa ameaças como a geração de conteúdo pedagogicamente inadequado pela IA e a conectividade limitada em escolas periféricas, e estabelece planos de ação que orientam decisões de produto, como a curadoria humana do conteúdo gerado, o processamento assíncrono do fórum e a exportação do material para uso offline.
+
+Em conjunto, essas análises asseguram que o escopo delimitado não se restrinja a automatizar a organização de um evento, mas enfrente as duas barreiras que hoje restringem as simulações da ONU à elite educacional: a complexidade operacional para quem organiza e o custo de acesso para quem participa.
 
 ### 2.1.1. Modelo de 5 Forças de Porter
 
 O Modelo das 5 Forças de Porter é uma ferramenta de gestão criada por Michael Porter com o objetivo de analisar o ambiente competitivo de um mercado. O modelo se estrutura em cinco pilares que permitem identificar oportunidades e ameaças em um determinado setor: a rivalidade entre concorrentes diretos, a ameaça de novos entrantes, a ameaça de produtos ou serviços substitutos, o poder de barganha dos clientes e o poder de barganha dos fornecedores. Embora originalmente concebido para maximizar lucro em ambientes empresariais, o modelo se mostra igualmente útil como ferramenta de diagnóstico estratégico para projetos sociais e educacionais.
 
-## Contexto da análise
+### Contexto da análise
 
 O projeto Simula Brasil atua no espaço das simulações de Modelo das Nações Unidas (MUN) como ferramenta de formação cidadã. Seu propósito central é levar esse formato — hoje concentrado quase exclusivamente em escolas particulares e universidades — para escolas públicas, de forma acessível e democrática.
 
 <div align="center">
   <sub>Figura 1 — Modelo de 5 Forças de Porter</sub><br>
-  <img src="../assets/[IMAGEM].png" width="100%" alt="Modelo de 5 Forças de Porter"><br>
-  <sup>Fonte:Simula Brasil, 2026.</sup>
+  <img src="assets/negocios/forcas_poter.jpeg" width="100%" alt="Modelo de 5 Forças de Porter"><br>
+  <sup>Fonte: Simula Brasil, 2026.</sup>
 </div>
 
 ---
@@ -129,15 +137,35 @@ A análise das cinco forças revela que o maior gargalo do projeto está no pode
 
 Por essa razão, a prioridade de ação deve ser máxima nessa frente, concentrando esforços em reduzir o custo de adesão das escolas e em comprovar, de forma consistente e documentada, o impacto real do projeto Simula Brasil.
 
-### 2.1.2. Análise SWOT da Instituição Parceira
+### 2.1.2. Análise SWOT
+
+A análise SWOT foi elaborada considerando o posicionamento do Simula Brasil no contexto da educação pública brasileira e do universo das simulações da ONU (MUN), um cenário marcado por forte desigualdade de acesso, baixa penetração de tecnologia na organização de eventos educacionais e crescente demanda por soft skills como pensamento crítico, oratória e negociação. A avaliação contempla fatores internos relativos à proposta de valor, à arquitetura tecnológica e à equipe do projeto, bem como fatores externos vinculados ao cenário educacional público, às barreiras financeiras dos estudantes e à ausência de concorrência direta no segmento. 
 
 <div align="center">
-  <sub>Figura 2 — Análise SWOT de [INSTITUIÇÃO]</sub><br>
-  <img src="../assets/[IMAGEM].png" width="600" alt="Análise SWOT"><br>
-  <sup>Fonte: Autores, [ANO].</sup>
+  <sub>Figura 2 — Análise SWOT</sub><br>
+  <img src="assets/negocios/analise-swot.jpeg" width="600" alt="Análise SWOT"><br>
+  <sup>Fonte: Autores, 2026.</sup>
 </div>
 
-> _[Preencher: leitura das Forças, Fraquezas, Oportunidades e Ameaças e como a solução atua sobre elas.]_
+**Forças (Ambiente interno)**
+
+O principal diferencial do Simula Brasil está no uso de agentes de inteligência artificial para automatizar a montagem de fóruns MUN, reduzindo um processo que hoje leva semanas ou meses de planejamento intensivo para poucas horas ou minutos, incluindo distribuição de países e comitês, geração de temáticas e cenários de crise, e formação de diretorias. Essa automação representa uma vantagem competitiva difícil de replicar manualmente. Outro ponto forte é o modelo de duas frentes complementares: a aplicação de organização de fóruns e a plataforma de formação e acesso para estudantes de baixa renda, o que amplia o impacto do projeto para além da simples tecnologia, atacando também o problema de letramento sobre o universo MUN. A proposta ainda conta com baixa barreira de adoção institucional, pois permite que qualquer escola, com ou sem experiência prévia em simulações, organize seu próprio evento.
+
+**Fraquezas (Ambiente interno)**
+
+Como projeto em estágio inicial, o Simula Brasil enfrenta a ausência de histórico e validação de mercado, o que pode gerar resistência de escolas e instituições parceiras na adoção de uma ferramenta ainda não testada em larga escala. A dependência de agentes de IA para geração de conteúdo sensível (temáticas, cenários de crise, distribuição de comitês) exige validação pedagógica cuidadosa, já que erros de geração podem comprometer a credibilidade do produto perante educadores. Além disso, a proposta inclui um fundo de financiamento para alunos em vulnerabilidade, o que introduz uma dependência de captação de recursos externos (parcerias, patrocínios ou doações) que foge do controle direto do produto tecnológico e pode limitar a escalabilidade dessa frente caso o financiamento não seja sustentável.
+
+**Oportunidades (Ambiente externo)**
+
+O contexto atual é altamente favorável: segundo o Censo Escolar 2024 (INEP), 83,1% das matrículas do ensino médio estão na rede estadual pública.<sup>[1](#ref1)</sup> , evidenciando um mercado praticamente inexplorado para simulações da ONU, hoje concentradas em colégios particulares e faculdades. A pesquisa da UNILA (2025) reforça a legitimidade pedagógica da proposta, ao demonstrar que a participação em MUNs aprimora oratória, negociação e pensamento crítico <sup>[2](#ref2)</sup> , o que facilita o discurso institucional junto a secretarias de educação e escolas públicas. Some-se a isso a crescente pressão por desenvolvimento de competências socioemocionais (soft skills) na educação básica brasileira, alinhada a políticas públicas e ao próprio Novo Ensino Médio. A ausência de uma solução tecnológica equivalente no mercado brasileiro representa uma janela de pioneirismo para o Simula Brasil se consolidar como referência antes que outros players entrem no espaço.
+
+**Ameaças (Ambiente externo)**
+
+A principal ameaça externa é a dependência de parcerias institucionais (escolas, secretarias de educação, organizações como a Associação Crescer Sempre) para viabilizar o piloto e a escala do projeto, o que expõe o Simula Brasil a riscos de descontinuidade caso essas parcerias não se sustentem. Também há o risco de resistência cultural de professores e gestores escolares pouco familiarizados com o universo MUN, o que pode desacelerar a adoção mesmo diante da automação oferecida. Do ponto de vista financeiro, a captação de recursos para o fundo de apoio a estudantes vulneráveis depende de fatores macroeconômicos e de doação/patrocínio, sujeitos a instabilidades. Por fim, à medida que o projeto ganha tração, existe a possibilidade de entrada de concorrentes, sejam startups edtech ou iniciativas de grandes organizações MUN já estabelecidas, que podem tentar replicar o modelo de automação por IA.
+
+---
+
+A análise evidencia que o Simula Brasil possui uma proposta de valor inovadora e tecnicamente diferenciada, sustentada por um problema social relevante e por uma janela de oportunidade praticamente sem concorrência direta. O principal desafio está em validar a solução junto a escolas públicas e garantir a sustentabilidade do fundo de financiamento, sendo essas as frentes que determinarão a capacidade do projeto de romper, de fato, a barreira que hoje restringe as simulações da ONU à elite educacional brasileira.
 
 ### 2.1.3. Solução
 
@@ -164,10 +192,18 @@ Espera-se reduzir drasticamente o tempo e o esforço necessários para organizar
 
 O sucesso será medido pela implementação real da solução em pelo menos uma escola pública, viabilizando um fórum que antes seria inviável. Os critérios incluem: geração completa e automatizada da estrutura de um fórum, sem intervenção manual na etapa de montagem; realização de ao menos uma simulação com alunos da rede pública utilizando a plataforma; e, como indicador de impacto de médio prazo, a premiação de pelo menos um aluno participante em uma simulação externa reconhecida, como o FAAP MUN ou o SPMUN. A avaliação ocorrerá de forma contínua, por meio de testes das funcionalidades a cada sprint e do acompanhamento dos alunos nos eventos externos.
 
-### 2.1.4. Value Proposition Canvas:
-## Introdução ao modelo
+### 2.1.4. Value Proposition Canvas
+#### Introdução ao modelo
 
 O Canvas de Proposta de Valor é a ferramenta que explica por que o cliente escolheria uma organização em vez de outra alternativa disponível. Ele deve responder a perguntas centrais como: qual problema estamos resolvendo? Qual necessidade estamos satisfazendo? Que pacote de produtos ou serviços estamos oferecendo a cada segmento de cliente? O objetivo é garantir que aquilo que a proposta oferece esteja de fato alinhado com o que o cliente precisa, deseja e sofre no seu dia a dia. A ferramenta se estrutura em três elementos: as tarefas do cliente (o que ele está tentando fazer, resolver ou alcançar), as dores (obstáculos, riscos e frustrações enfrentados antes, durante ou depois de tentar realizar essas tarefas) e os ganhos (benefícios e resultados que ele deseja obter).
+
+
+<div align="center">
+  <sub>Figura 3 — Value Proposition Canvas</sub><br>
+  <img src="assets/negocios/canvas_proposta_de_valor.jpeg" width="100%" alt="Value Proposition Canvas"><br>
+  <sup>Fonte: Simula Brasil, 2026.</sup>
+</div>
+ 
 
 ---
 
@@ -296,36 +332,123 @@ A análise demonstra que a proposta de valor do projeto está alinhada às princ
 A Matriz de Riscos é uma ferramenta visual utilizada para priorizar os riscos de um projeto com base em duas dimensões: probabilidade, que mede a chance de um risco ocorrer, e impacto, que representa suas consequências caso se concretize (PROJECT MANAGEMENT INSTITUTE, 2017). A combinação dessas dimensões gera uma classificação geral — alta, média ou baixa — representada por cores, facilitando o foco nos riscos mais críticos e orientando a construção de planos de ação preventivos.
 
 <div align="center">
-  <sub>Figura 4 — Matriz de Riscos — Ameaças</sub><br>
-  <img src="../assets/[IMAGEM].png" width="600" alt="Matriz de Riscos — Ameaças"><br>
-  <sup>Fonte: Autores, [ANO].</sup>
+  <sub>Figura 4 — Matriz de Riscos</sub><br>
+  <img src="assets/negocios/matriz-de-riscos.jpeg" width="600" alt="Matriz de Riscos"><br>
+  <sup>Fonte: Autores, 2026.</sup>
 </div>
 
-> _[Preencher: para cada ameaça — natureza, probabilidade, impacto, classificação geral e plano de ação.]_
+**AM01**
 
-<div align="center">
-  <sub>Figura 5 — Matriz de Riscos — Oportunidades</sub><br>
-  <img src="../assets/[IMAGEM].png" width="600" alt="Matriz de Riscos — Oportunidades"><br>
-  <sup>Fonte: Autores, [ANO].</sup>
-</div>
+**Risco:** Geração de conteúdo pedagogicamente inadequado pela IA
+**Probabilidade:** 70% (Alta)
+**Impacto:** Muito Alto
+**Descrição:** O núcleo da solução depende de agentes de IA para gerar temáticas, cenários de crise e distribuição de países/comitês. Se a IA produzir conteúdo impreciso, tendencioso ou pedagogicamente inadequado (por exemplo, um cenário de crise mal contextualizado historicamente), a credibilidade do produto perante professores e escolas públicas pode ser comprometida logo no primeiro uso.
+**Plano de Ação:** Implementar uma camada de revisão humana (curadoria pedagógica) antes da publicação de qualquer conteúdo gerado por IA, além de prompts estruturados com validação por especialistas da educação.
 
-> _[Preencher: para cada oportunidade — natureza, probabilidade, impacto, classificação geral e plano de ação.]_
+**AM02**
+
+**Risco:** Instabilidade na captação de recursos para o fundo de financiamento
+**Probabilidade:** 50% (Moderada)
+**Impacto:** Muito Alto
+**Descrição:** A frente de formação e acesso depende de um fundo de financiamento para estudantes em vulnerabilidade, sustentado por parcerias, patrocínios ou doações externas. Uma eventual descontinuidade de aportes compromete diretamente a promessa central de democratização de acesso do projeto.
+**Plano de Ação:** Diversificar as fontes de captação (editais públicos, patrocínio corporativo via leis de incentivo, parcerias com ONGs) e estabelecer um fundo de reserva mínimo antes de comprometer vagas financiadas.
+
+**AM03**
+
+**Risco:** Resistência cultural de professores e gestores escolares
+**Probabilidade:** 50% (Moderada)
+**Impacto:** Alto
+**Descrição:** Grande parte dos professores e gestores da rede pública não possui familiaridade com o universo MUN nem com ferramentas de automação por IA. Isso pode gerar desconfiança quanto à legitimidade do processo automatizado, atrasando a adoção institucional mesmo diante da economia de tempo oferecida.
+**Plano de Ação:** Desenvolver materiais de onboarding simplificados e um piloto guiado (com apoio direto da equipe) nas primeiras escolas parceiras para gerar cases de sucesso replicáveis.
+
+**AM04**
+
+**Risco:** Limitações de conectividade em escolas públicas periféricas
+**Probabilidade:** 30% (Baixa)
+**Impacto:** Alto
+**Descrição:** As escolas públicas, especialmente em regiões periféricas, podem enfrentar internet instável ou inexistente, dificultando o uso de uma plataforma que depende de processamento de IA em tempo real para montar o fórum.
+**Plano de Ação:** Estruturar fluxos assíncronos (ex: geração do fórum pode ser solicitada e processada em background, com notificação quando pronta) e permitir exportação offline do material gerado (PDF/CSV) para uso posterior sem necessidade de conexão contínua.
+
+### 2.1.5.2. Oportunidades
+
+**OP01**
+
+**Risco:** Adoção rápida por escolas devido à eliminação da barreira organizacional
+**Probabilidade:** 90% (Muito Alta)
+**Impacto:** Muito Alto
+**Descrição:** Hoje, organizar um fórum MUN exige semanas ou meses de planejamento manual. Se a automação por IA reduzir esse processo para horas, escolas com pouco ou nenhum histórico em simulações passam a enxergar a organização de um evento próprio como algo viável, o que pode gerar adoção orgânica acelerada.
+**Plano de Ação:** Garantir que o fluxo de criação do fórum tenha uma experiência "à prova de erros" (onboarding simples, poucos cliques), já que esse será o principal gatilho de conversão de novas escolas.
+
+**OP02**
+
+**Risco:** Parcerias com secretarias estaduais de educação
+**Probabilidade:** 70% (Alta)
+**Impacto:** Muito Alto
+**Descrição:** Como 83,1% das matrículas do ensino médio estão na rede estadual, uma parceria institucional com secretarias de educação pode viabilizar a adoção em escala (centenas de escolas de uma vez), em vez de depender de adesão escola por escola.
+**Plano de Ação:** Preparar um material institucional específico para secretarias, com foco em impacto social mensurável e alinhamento com o Novo Ensino Médio, para viabilizar reuniões e projetos-piloto regionais.
+
+**OP03**
+
+**Risco:** Geração de dados de impacto social para atrair investidores e patrocinadores
+**Probabilidade:** 50% (Moderada)
+**Impacto:** Moderado
+**Descrição:** Ao centralizar a organização de fóruns e o acesso de estudantes de baixa renda em uma única plataforma, o Simula Brasil passa a gerar dados estruturados de impacto (nº de estudantes atendidos, escolas participantes, evolução de habilidades). Esses dados podem ser usados como ativo estratégico para atrair patrocinadores de impacto social e editais de fomento.
+**Plano de Ação:** Estruturar desde o início um painel simples de métricas de impacto (dashboard), pensado tanto para uso interno quanto para apresentações a potenciais parceiros e financiadores.
+
+**OP04**
+
+**Risco:** Escalabilidade para outros formatos de simulação acadêmica
+**Probabilidade:** 30% (Baixa)
+**Impacto:** Alto
+**Descrição:** Embora o escopo inicial seja o MUN, a arquitetura de automação por IA (distribuição de papéis, geração de cenários, formação de diretorias) pode ser generalizada para outros tipos de simulação educacional (ex: simulações legislativas, tribunais simulados, feiras de ciências), ampliando o mercado endereçável do produto.
+**Plano de Ação:** Desenvolver os módulos de geração de conteúdo (temáticas, papéis, cenários) de forma flexível e adaptável, para que não fiquem limitados exclusivamente ao formato ONU.
 
 ## 2.2. Personas
 
 Durante essa seção, nossa equipe utilizou o conceito de proto-personas para identificar os perfis de usuários que a plataforma irá atender. Proto-personas são representações hipotéticas construídas com base no conhecimento prévio da equipe e nos dados disponíveis sobre o contexto do projeto, sem necessariamente passar por pesquisas formais com usuários reais (GOTHELF; SEIDEN, 2013).
 
-### 2.2.1 Persona - [PERFIL]
-
-> _[Preencher: descrição da persona, contexto, responsabilidades e dores.]_
+### 2.2.1 Persona - Marta - Gestora Escolar Crítica (decisora)
 
 <div align="center">
-  <sub>Figura [N] — Persona [PERFIL]</sub><br>
-  <img src="../assets/[IMAGEM].png" width="70%" alt="Persona [PERFIL]"><br>
-  <sup>Fonte: Autores, [ANO].</sup>
+  <sub>Figura 5 — Persona Gestora Escolar Crítica (decisora)</sub><br>
+  <img src="assets/personas/Marta_aparecida.png" width="70%" alt="Persona Gestora Escolar Crítica (decisora) "><br>
+  <sup>Fonte: Simula Brasil, 2026.</sup>
 </div>
 
-> _[Repetir o bloco acima para cada persona do projeto.]_
+Marta Aparecida, 47 anos, é diretora de uma escola estadual de ensino médio localizada na periferia de um grande centro urbano. Ela administra uma escola com recursos limitados, é cobrada por resultados positivos e enfrenta uma agenda curricular já lotada.
+
+Seus principais objetivos são oferecer atividades extracurriculares sem comprometer o orçamento, desenvolver o protagonismo estudantil e melhorar a reputação da escola perante a comunidade. Entre suas dores estão os recursos financeiros e o tempo escasso da equipe, a decepção com projetos externos anteriores que prometeram e não entregaram, a crença de que "MUN é coisa de escola particular" e distante da realidade da sua escola, além da resistência de professores já sobrecarregados diante da possibilidade de assumir mais uma atividade.
+
+Diante do Simula Brasil, Marta não vai atrás do projeto, é o projeto que precisa convencê-la, com pouco esforço e risco praticamente nulo da parte dela. Ela responde melhor a provas concretas do que a promessas, o que resume sua postura na frase: "Eu não tenho tempo nem verba para apostar em algo que pode não dar em nada." O Simula Brasil resolve isso oferecendo formato 100% online e gratuito, kit de implementação pronto, capacitação gratuita de professores e alinhamento documentado com a BNCC, reduzindo o custo de adesão a praticamente zero.
+
+### 2.2.2 Persona - Rodrigo Santos - O Professor Sobrecarregado, mas Curioso (quem executa)
+
+<div align="center">
+  <sub>Figura 6 — Professor Sobrecarregado, mas Curioso (quem executa)</sub><br>
+  <img src="assets/personas/Rodrigo_santos.png" width="70%" alt="O Professor Sobrecarregado, mas Curioso (quem executa) "><br>
+  <sup>Fonte: Simula Brasil, 2026.</sup>
+</div>
+
+Rodrigo Santos, 34 anos, é professor de História e coordenador do grêmio estudantil na mesma escola de Marta. Ele tenta trazer atividades diferentes para os alunos, mas divide seu tempo entre várias turmas e funções administrativas, sem formação específica em metodologias de simulação.
+
+Seus objetivos são engajar os alunos em atividades de valor sem sobrecarga extra, desenvolver competências interpessoais e socioemocionais na turma e ser reconhecido como um educador que trouxe inovação para a escola. Suas dores incluem a falta de tempo e formação específica para realizar simulações, a insegurança técnica por nunca ter participado de um MUN e não dominar as regras, e o medo de montar toda a estrutura da atividade e, mesmo assim, não conseguir despertar o interesse da turma.
+
+Rodrigo aceita experimentar o Simula Brasil, mas precisa sentir que não está sozinho. Ele busca suporte, não apenas material teórico, e reage bem a exemplos práticos e ao contato com quem já viveu a experiência. Isso se resume na frase: "Eu quero fazer diferente, mas não posso correr o risco de bancar isso sozinho e ver os alunos perderem o interesse na segunda aula." O projeto resolve essas dores por meio de uma trilha de capacitação simples e gratuita, um manual do facilitador e uma rede de mentores formada por ex-alunos do próprio projeto, reduzindo tanto a insegurança técnica quanto o medo do desengajamento da turma.
+
+### 2.2.3 Persona - Kauê Ferreira - O Aluno que Nunca Teve a Chance (usuário final)
+
+<div align="center">
+  <sub>Figura 7 — Kauê Ferreira - O Aluno que Nunca Teve a Chance (usuário final)</sub><br>
+  <img src="assets/personas/Kauê_ferreira.png" width="70%" alt="Kauê Ferreira - O Aluno que Nunca Teve a Chance (usuário final)"><br>
+  <sup>Fonte: Simula Brasil, 2026.</sup>
+</div>
+
+Kauê Ferreira, 16 anos, é estudante do 2º ano do ensino médio em uma escola pública da mesma região. Ele é curioso e tem opinião sobre assuntos atuais, mas nunca teve contato com atividades como debate estruturado ou simulações. Ele associa esse tipo de coisa a "escola cara", algo que não é para alguém como ele.
+
+Seus objetivos são desenvolver oratória, argumentação e pensamento crítico, acessar experiências de aprendizado hoje associadas a escolas de elite e construir repertório para o futuro acadêmico e profissional. Entre suas dores estão a insegurança para falar em público ou debater temas complexos, a falta de referência de "como" participar, por nunca ter tido acesso a esse formato antes, e um certo ceticismo inicial misturado com preguiça de se engajar, por achar que vai ser "chato" ou "difícil demais".
+
+Kauê só se engaja de verdade depois de ver alguém parecido com ele participando e gostando; um colega, não um adulto ou uma autoridade dizendo que "é importante", e precisa de uma primeira experiência de baixo esforço para não desistir antes de começar. Isso se resume na frase: "Isso parece coisa que não é pra mim, só vou levar a sério se eu ver alguém como eu fazendo e curtindo." O Simula Brasil resolve essa barreira com linguagem acessível em português, ambiente acolhedor, trilha progressiva sem exigir experiência prévia e mentoria por ex-alunos do próprio projeto, reduzindo a barreira de entrada percebida.
+
 
 ## 2.3. User Stories
 
@@ -385,16 +508,16 @@ Critérios INVEST | <ul><li>I (Independente): [justificar]</li><li>N (Negociáve
 > _[Preencher: descrição do padrão arquitetural adotado e responsabilidade de cada camada.]_
 
 <div align="center">
-  <sub>Figura [N] — Diagrama de Arquitetura</sub><br>
-  <img src="../assets/[IMAGEM].png" width="70%" alt="Diagrama de Arquitetura"><br>
+  <sub>Figura 8 — Diagrama de Arquitetura</sub><br>
+  <img src="assets/[IMAGEM].png" width="70%" alt="Diagrama de Arquitetura"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
 ### 3.2.2. Diagrama de Casos de Uso
 
 <div align="center">
-  <sub>Figura [N] — Diagrama de Caso de Uso</sub><br>
-  <img src="../assets/[IMAGEM].png" width="70%" alt="Diagrama de Caso de Uso"><br>
+  <sub>Figura 9 — Diagrama de Caso de Uso</sub><br>
+  <img src="assets/[IMAGEM].png" width="70%" alt="Diagrama de Caso de Uso"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -409,8 +532,8 @@ A notação de multiplicidade utilizada segue o padrão (mínimo, máximo), onde
 - 1..* indica participação obrigatória e múltipla (equivalente a 1,N)
 
 <div align="center">
-  <sub>Figura [N] — Diagrama de Classes do Domínio</sub><br>
-  <img src="../assets/[IMAGEM].png" width="100%" alt="Diagrama de Classes do Domínio"><br>
+  <sub>Figura 10 — Diagrama de Classes do Domínio</sub><br>
+  <img src="assets/[IMAGEM].png" width="100%" alt="Diagrama de Classes do Domínio"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -428,8 +551,8 @@ Um diagrama de classes arquitetural representa a estrutura estática do sistema 
 > _[Opcional: criar um diagrama por perfil de usuário caso a estrutura completa fique extensa.]_
 
 <div align="center">
-  <sub>Figura [N] — Diagrama de Classes Arquitetural [PERFIL]</sub><br>
-  <img src="../assets/[IMAGEM].png" width="100%" alt="Diagrama de Classes Arquitetural"><br>
+  <sub>Figura 11 — Diagrama de Classes Arquitetural [PERFIL]</sub><br>
+  <img src="assets/[IMAGEM].png" width="100%" alt="Diagrama de Classes Arquitetural"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -444,8 +567,8 @@ Um diagrama de classes arquitetural representa a estrutura estática do sistema 
 > _[Preencher.]_
 
 <div align="center">
-  <sub>Figura [N] — Diagrama de Sequência — [FLUXO]</sub><br>
-  <img src="../assets/[IMAGEM].png" width="70%" alt="Diagrama de Sequência"><br>
+  <sub>Figura 12 — Diagrama de Sequência — [FLUXO]</sub><br>
+  <img src="assets/[IMAGEM].png" width="70%" alt="Diagrama de Sequência"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -484,8 +607,8 @@ Wireframes são representações visuais simplificadas de uma interface, utiliza
 > _[Preencher: descrição do fluxo/wireflow e de cada tela.]_
 
 <div align="center">
-  <sub>Figura [N] — [Wireflow/Wireframe] [PERFIL/TELA]</sub><br>
-  <img src="../assets/[IMAGEM].png" alt="[descrição]" width="600"><br>
+  <sub>Figura 13 — [Wireflow/Wireframe] [PERFIL/TELA]</sub><br>
+  <img src="assets/[IMAGEM].png" alt="[descrição]" width="600"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -495,31 +618,86 @@ Wireframes são representações visuais simplificadas de uma interface, utiliza
 
 Guia de estilos é o documento com as regras do que pode e não pode ser feito pela marca (CANVA, 2024), reunindo paleta de cores, tipografia, iconografia e imagens que orientam o desenvolvimento e a manutenção da interface.
 
+A identidade do Simula Brasil parte do próprio logotipo: o globo com louros remete às simulações da ONU, e as quatro figuras em azul, verde, dourado e roxo dão origem à paleta. As decisões visuais seguem quatro princípios, derivados do público do projeto:
+
+- **Confiável:** gestoras precisam de provas, não de promessas. Visual sóbrio, informação clara e sem exageros.
+- **Acolhedor:** alguns estudantes acham que MUNs não são para eles. Linguagem acessível em português e imagens de gente parecida com eles.
+- **Simples e sem esforço:** professores não têm tempo. Poucos cliques, fluxos "à prova de erros" e destaque para a próxima ação.
+- **Inclusivo:** a plataforma será usada em escolas periféricas, com conexão e telas variadas. Contraste alto, textos legíveis e boa leitura no celular.
+
+**Logotipo.** A versão principal, em cores, é aplicada sobre fundo branco; sobre fundo azul, usa-se a versão branca. Ao redor do logo deve haver um espaço livre equivalente à altura da letra "S", e a largura mínima é de 25 mm em materiais impressos e 120 px em telas. Não se deve distorcer, girar ou esticar o logotipo, trocar as cores do símbolo ou da palavra BRASIL, aplicá-lo sobre fundos que reduzam o contraste nem adicionar sombras, contornos ou efeitos.
+
 ### 3.4.1 Cores
 
 <div align="center">
-  <sub>Figura [N] — Paleta de cores</sub><br>
-  <img src="../assets/[IMAGEM].png" alt="Paleta de cores" width="600"><br>
-  <sup>Fonte: Autores, [ANO].</sup>
+  <sub>Figura 14 — Paleta de cores</sub><br>
+  <img src="assets/guia-de-estilos/paleta-de-cores.png" alt="Paleta de cores" width="600"><br>
+  <sup>Fonte: Autores, 2026.</sup>
 </div>
 
-> _[Preencher: cores principais, secundárias, neutras e de feedback, com HEX, nome e onde/como cada uma é aplicada.]_
+A paleta foi extraída do logotipo. O azul é a cor da marca; verde, dourado e roxo funcionam como apoio e acento; as neutras sustentam fundos e textos. A proporção sugerida de uso é 60% branco e neutras, 25% azul e 15% verde, dourado e roxo somados.
+
+| Grupo | Cor | HEX | RGB | Onde é aplicada |
+|---|---|---|---|---|
+| Principal | Azul | `#002B66` | 0 43 102 | Títulos, logotipo, botões principais, cabeçalho e links |
+| Secundária | Verde | `#0A7E65` | 10 126 101 | Confirmações, destaques positivos e subtítulos |
+| Secundária | Dourado | `#E5A913` | 229 169 19 | Chamadas, selos e ícones sobre fundo escuro; texto sobre dourado sempre em grafite |
+| Secundária | Roxo | `#6A3B73` | 106 59 115 | Gráficos, categorias e elementos de apoio |
+| Neutra | Branco | `#FFFFFF` | 255 255 255 | Fundo das páginas e cartões |
+| Neutra | Cinza claro | `#D9D9D9` | 217 217 217 | Divisores, campos e blocos de fundo |
+| Neutra | Cinza escuro | `#737373` | 115 115 115 | Legendas e textos secundários |
+| Neutra | Grafite | `#2B2B2B` | 43 43 43 | Texto corrido e títulos neutros |
+
+**Cores de feedback.** Indicam o estado da interface. O vermelho de erro não aparece no logotipo: é uma cor funcional, usada somente em mensagens de erro.
+
+| Estado | HEX | Uso |
+|---|---|---|
+| Sucesso | `#0A7E65` | Cadastro concluído, fórum gerado |
+| Atenção | `#E5A913` | Prazos, revisão pendente |
+| Erro | `#B3261E` | Falhas e campos inválidos |
+| Informação | `#002B66` | Avisos e dicas |
+
+**Contraste.** Para atender ao princípio de inclusão, toda combinação de texto e fundo segue a razão mínima de 4,5:1 definida pelo nível AA das Diretrizes de Acessibilidade para Conteúdo Web (WCAG).
+
+| Combinação (texto / fundo) | Uso | Razão | Resultado |
+|---|---|---|---|
+| Azul / branco | Botão principal, cabeçalho | 13,7:1 | Aprovado (AA) |
+| Grafite / branco | Texto corrido | 14,2:1 | Aprovado (AA) |
+| Cinza escuro / branco | Legendas | 4,7:1 | Aprovado (AA) |
+| Verde / branco | Subtítulos, sucesso | 5,0:1 | Aprovado (AA) |
+| Roxo / branco | Elementos de apoio | 8,4:1 | Aprovado (AA) |
+| Grafite / dourado | Texto sobre dourado | 6,8:1 | Aprovado (AA) |
+| Dourado / azul | Destaque sobre azul | 6,5:1 | Aprovado (AA) |
+| Branco / dourado | Texto branco sobre dourado | 2,1:1 | Não usar para texto |
+| Dourado / branco | Texto dourado sobre branco | 2,1:1 | Não usar para texto |
 
 ### 3.4.2 Tipografia
 
 <div align="center">
-  <sub>Figura [N] — Tipografia da plataforma</sub><br>
-  <img src="../assets/[IMAGEM].png" alt="Tipografia" width="1200"><br>
-  <sup>Fonte: Autores, [ANO].</sup>
+  <sub>Figura 15 — Tipografia da plataforma</sub><br>
+  <img src="assets/guia-de-estilos/tipografia.png" alt="Tipografia" width="600"><br>
+  <sup>Fonte: Autores, 2026.</sup>
 </div>
 
-> _[Preencher: família(s) tipográfica(s), pesos e hierarquia.]_
+A Open Sans é a família única da plataforma, em dois pesos: Bold para títulos e botões e Regular para texto corrido. É gratuita no Google Fonts, e a Arial é a alternativa de sistema. A hierarquia segue uma escala de razão 1,25 a partir do corpo de 16 px, com títulos menores em telas pequenas para que não ocupem a tela inteira no celular.
+
+| Nível | Desktop (tamanho / entrelinha) | Celular (tamanho / entrelinha) | Peso e cor |
+|---|---|---|---|
+| Título H1 | 32 px / 40 | 26 px / 34 | Bold, azul |
+| Título H2 | 24 px / 32 | 21 px / 28 | Bold, azul |
+| Título H3 | 20 px / 28 | 18 px / 26 | Bold, verde |
+| Título H4 | 16 px / 24 | 16 px / 24 | Bold, grafite |
+| Corpo | 16 px / 24 | 16 px / 24 | Regular, grafite |
+| Legenda | 13 px / 20 | 13 px / 20 | Regular, cinza escuro |
+| Botão | 16 px | 16 px | Bold, branco sobre azul |
+
+O corpo do texto nunca fica abaixo de 16 px. O texto é alinhado à esquerda, a caixa-alta aparece só no logotipo e em rótulos curtos, e as frases são curtas, em português simples.
 
 ### 3.4.3 Iconografia e imagens
 
 <div align="center">
-  <sub>Figura [N] — Iconografia da plataforma</sub><br>
-  <img src="../assets/[IMAGEM].png" alt="Iconografia" width="1100"><br>
+  <sub>Figura 16 — Iconografia da plataforma</sub><br>
+  <img src="assets/[IMAGEM].png" alt="Iconografia" width="1100"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -537,8 +715,8 @@ Guia de estilos é o documento com as regras do que pode e não pode ser feito p
 ### 3.5.1.1 [Nome da Tela]
 
 <div align="center">
-  <sub>Figura [N] — Protótipo [PERFIL] - [Tela]</sub><br>
-  <img src="../assets/[IMAGEM].png" alt="[descrição]" width="900"><br>
+  <sub>Figura 17 — Protótipo [PERFIL] - [Tela]</sub><br>
+  <img src="assets/[IMAGEM].png" alt="[descrição]" width="900"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -573,8 +751,8 @@ Guia de estilos é o documento com as regras do que pode e não pode ser feito p
 > _[Preencher: descrição do modelo conceitual (DEVMEDIA, [s. d.]).]_
 
 <div align="center">
-  <sub>Figura [N] — Modelo de Entidade-Relacionamento (ER)</sub><br>
-  <img src="../assets/[IMAGEM].png" width="90%" alt="Modelo ER"><br>
+  <sub>Figura 18 — Modelo de Entidade-Relacionamento (ER)</sub><br>
+  <img src="assets/[IMAGEM].png" width="90%" alt="Modelo ER"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -583,8 +761,8 @@ Guia de estilos é o documento com as regras do que pode e não pode ser feito p
 > _[Preencher: descrição do modelo lógico (atributos, PKs, FKs, cardinalidades, normalização).]_
 
 <div align="center">
-  <sub>Figura [N] — Diagrama de Entidades-Relacionais (DER) lógico</sub><br>
-  <img src="../assets/[IMAGEM].png" width="80%" alt="DER lógico"><br>
+  <sub>Figura 19 — Diagrama de Entidades-Relacionais (DER) lógico</sub><br>
+  <img src="assets/[IMAGEM].png" width="80%" alt="DER lógico"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -699,8 +877,8 @@ Authorization: Bearer <token>
 > _[Preencher: configuração do servidor, camada de persistência, endpoints, validações e testes, com figuras de evidência.]_
 
 <div align="center">
-  <sub>Figura [N] — [descrição]</sub><br>
-  <img src="../assets/[IMAGEM].png" width="80%" alt="[descrição]"><br>
+  <sub>Figura 20 — [descrição]</sub><br>
+  <img src="assets/[IMAGEM].png" width="80%" alt="[descrição]"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -777,8 +955,8 @@ Authorization: Bearer <token>
 > _[Preencher: output de `npm run test`, relatório de cobertura e mapeamento CT → RN → RF, com figuras.]_
 
 <div align="center">
-  <sub>Figura [N] — [descrição da evidência de teste]</sub><br>
-  <img src="../assets/[IMAGEM].png" width="80%" alt="[descrição]"><br>
+  <sub>Figura 21 — [descrição da evidência de teste]</sub><br>
+  <img src="assets/[IMAGEM].png" width="80%" alt="[descrição]"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -816,8 +994,8 @@ O System Usability Scale (SUS) é um questionário de dez afirmações proposto 
 | **Média geral** | **[média]** | **[classificação]** |
 
 <div align="center">
-  <sub>Figura [N] — Pontuação SUS por participante</sub><br>
-  <img src="../assets/[IMAGEM].png" width="100%" alt="Gráfico SUS"><br>
+  <sub>Figura 22 — Pontuação SUS por participante</sub><br>
+  <img src="assets/[IMAGEM].png" width="100%" alt="Gráfico SUS"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -892,8 +1070,8 @@ O System Usability Scale (SUS) é um questionário de dez afirmações proposto 
 O Business Model Canvas, proposto por Osterwalder e Pigneur (2011), é uma ferramenta estratégica que representa a lógica de criação, entrega e captura de valor de um negócio por meio de nove blocos fundamentais.
 
 <div align="center">
-  <sub>Figura [N] — Business Model Canvas</sub><br>
-  <img src="../assets/[IMAGEM].png" width="600" alt="Business Model Canvas"><br>
+  <sub>Figura 23 — Business Model Canvas</sub><br>
+  <img src="assets/[IMAGEM].png" width="600" alt="Business Model Canvas"><br>
   <sup>Fonte: Autores, [ANO].</sup>
 </div>
 
@@ -933,14 +1111,12 @@ O Business Model Canvas, proposto por Osterwalder e Pigneur (2011), é uma ferra
 
 > _[Preencher.]_
 
-# <a name="c7"></a>
-
-## 7. Conclusões e trabalhos futuros
+## <a name="c7"></a>7. Conclusões e trabalhos futuros
 
 > _[Preencher: balanço da entrega frente aos objetivos e critérios de sucesso da seção 2; pontos fortes; limitações e planos de ação; e oportunidades de evolução futura.]_
 
 # <a name="c8"></a>8. Referências
 
-> _[Preencher: referências no padrão ABNT, em ordem alfabética.]_
+1. <a id="ref1"></a>INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA (INEP). Censo Escolar da Educação Básica 2024: notas estatísticas. Brasília: Inep, 2025. Disponível em: https://download.inep.gov.br/publicacoes/institucionais/estatisticas_e_indicadores/notas_estatisticas_censo_da_educacao_basica_2024.pdf. Acesso em: 07 jul. 2026. 
 
-[SOBRENOME, Nome. Título. Local: Editora, ano. Disponível em: <URL>. Acesso em: [data].]
+2. <a id="ref2"></a>CANDIA, Jhonatan Jesus. Modelos de las Naciones Unidas como Simulación Educativa. Trabalho de Conclusão de Curso (Licenciatura em Relações Internacionais) – Universidade Federal da Integração Latino-Americana (UNILA), Foz do Iguaçu, 2025. Disponível em: https://dspace.unila.edu.br/items/7e8a3d2f-2665-4d36-b0ec-4e900efde8b2. Acesso em: 07 jul. 2026. 

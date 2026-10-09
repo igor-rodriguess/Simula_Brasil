@@ -1,0 +1,98 @@
+.paleta {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(170px, 100%), 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.amostra {
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--sb-cinza-claro);
+  font-size: 0.875rem;
+}
+
+.amostra strong {
+  font-size: 1.05rem;
+}
+
+.hex {
+  margin-top: auto;
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 0.875rem;
+}
+
+.rgb {
+  opacity: 0.9;
+}
+
+.uso {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--sb-cinza-escuro);
+  margin: 0.5rem 0 0;
+}
+
+.aa {
+  display: inline-block;
+  min-width: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--sb-cinza-claro);
+  margin-right: 0.5rem;
+}
+
+.aprovado {
+  color: var(--sb-verde);
+  font-weight: 700;
+}
+
+.reprovado {
+  color: var(--sb-erro);
+  font-weight: 700;
+}
+
+.escala {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+}
+
+.nivel {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: #f1f1f4;
+  border-radius: 12px;
+}
+
+.rotulo {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8125rem;
+  color: var(--sb-cinza-escuro);
+}
+
+.rotulo strong {
+  text-transform: uppercase;
+  color: var(--sb-cinza-escuro);
+}
+
+@media (max-width: 640px) {
+  .nivel {
+    grid-template-columns: 1fr;
+  }
+}

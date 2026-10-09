@@ -1,0 +1,136 @@
+.hero {
+  padding: 4rem 0 3rem;
+  background: var(--sb-branco);
+  border-bottom: 1px solid var(--sb-cinza-claro);
+  text-align: center;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Logo acima da largura mínima de 120 px */
+.simbolo {
+  width: 160px;
+  height: auto;
+}
+
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.simula {
+  color: var(--sb-azul);
+}
+
+.bra {
+  color: var(--sb-verde);
+}
+
+.sil {
+  color: var(--sb-dourado);
+}
+
+.tagline {
+  max-width: 640px;
+  margin: 2rem auto 0;
+  font-size: 1.125rem;
+  color: var(--sb-grafite);
+}
+
+.acoes {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.secaoTitulo {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.principios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  gap: 1.5rem;
+}
+
+.principio {
+  border-left: 8px solid;
+  border-radius: 8px;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+}
+
+.principio h3 {
+  color: var(--sb-grafite);
+  font-size: 1.125rem;
+  margin-bottom: 0.4rem;
+}
+
+.principio p {
+  margin: 0;
+  color: var(--sb-grafite);
+}
+
+.capitulos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(230px, 100%), 1fr));
+  gap: 1rem;
+}
+
+.capitulo {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--sb-cinza-claro);
+  border-radius: 12px;
+  color: var(--sb-grafite);
+  font-weight: 700;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+.capitulo:hover {
+  text-decoration: none;
+  border-color: var(--sb-azul);
+  background-color: #f4f7fb;
+  color: var(--sb-azul);
+}
+
+.numero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--sb-azul);
+  color: var(--sb-branco);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 2.5rem 0 2rem;
+  }
+
+  .simbolo {
+    width: 120px;
+  }
+
+  .wordmark {
+    font-size: 2.75rem;
+  }
+}
