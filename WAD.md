@@ -449,11 +449,11 @@ Seus objetivos são desenvolver oratória, argumentação e pensamento crítico,
 
 Kauê só se engaja de verdade depois de ver alguém parecido com ele participando e gostando; um colega, não um adulto ou uma autoridade dizendo que "é importante", e precisa de uma primeira experiência de baixo esforço para não desistir antes de começar. Isso se resume na frase: "Isso parece coisa que não é pra mim, só vou levar a sério se eu ver alguém como eu fazendo e curtindo." O Simula Brasil resolve essa barreira com linguagem acessível em português, ambiente acolhedor, trilha progressiva sem exigir experiência prévia e mentoria por ex-alunos do próprio projeto, reduzindo a barreira de entrada percebida.
 
-### 2.2.4 Persona - Kauê Ferreira - O Aluno que Nunca Teve a Chance (usuário final)
+### 2.2.4 Persona - Beatriz Costa - A Aluna que Teve Chances (usuário final)
 
 <div align="center">
-  <sub>Figura 7 — Beatriz Costa - A alnua que teve chances (usuário final) </sub><br>
-  <img src="assets/personas/Beatriz_costa.png" width="70%" alt="Beatriz Costa - A alnua que teve chances (usuário final)"><br>
+  <sub>Figura 7 — Beatriz Costa - A aluna que teve chances (usuário final)</sub><br>
+  <img src="assets/personas/Beatriz_costa.png" width="70%" alt="Beatriz Costa - A aluna que teve chances (usuário final)"><br>
   <sup>Fonte: Simula Brasil, 2026.</sup>
 </div>
 
