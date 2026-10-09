@@ -79,11 +79,6 @@ const config = {
             label: 'Documentação',
           },
           {
-            to: '/wad/projeto/guia-de-estilos',
-            label: 'Guia de estilos',
-            position: 'left',
-          },
-          {
             href: 'https://github.com/igor-rodriguess/Simula_Brasil',
             label: 'GitHub',
             position: 'right',

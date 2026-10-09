@@ -299,19 +299,3 @@ body {
 .pagination-nav__label {
   color: var(--sb-azul);
 }
-
-/* Índices gerados das subseções (ex.: 3.1): mesmo H1 das páginas
-   e cards sem o resumo automático, que pega trechos de tabela */
-[class*='generatedIndexPage'] h1 {
-  font-size: var(--sb-h1);
-  line-height: 40px;
-}
-
-[class*='cardDescription'] {
-  display: none;
-}
-
-[class*='cardTitle'] {
-  white-space: normal;
-  overflow: visible;
-}

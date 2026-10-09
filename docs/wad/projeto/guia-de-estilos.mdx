@@ -1,0 +1,97 @@
+---
+title: "3.4. Guia de estilos"
+sidebar_position: 4
+---
+
+import {Paleta, TabelaContraste, EscalaTipografica} from '@site/src/components/GuiaEstilos';
+
+Guia de estilos é o documento com as regras do que pode e não pode ser feito pela marca (CANVA, 2024), reunindo paleta de cores, tipografia, iconografia e imagens que orientam o desenvolvimento e a manutenção da interface.
+
+A identidade parte do próprio logotipo: o globo com louros remete às simulações da ONU, e as quatro figuras em azul, verde, dourado e roxo dão origem à paleta.
+
+## Princípios
+
+Os princípios da interface vêm do público do projeto:
+
+- **Confiável:** gestoras precisam de provas, não de promessas. Visual sóbrio, informação clara e sem exageros.
+- **Acolhedor:** alguns estudantes acham que MUNs não são para eles. Linguagem acessível em português e imagens de gente parecida com eles.
+- **Simples e sem esforço:** professores não têm tempo. Poucos cliques, fluxos “à prova de erros” e destaque para a próxima ação.
+- **Inclusivo:** usado em escolas periféricas, com conexão e telas variadas. Contraste alto, textos legíveis e boa leitura no celular.
+
+## Logotipo
+
+<div className="row margin-vert--md">
+  <div className="col col--6 margin-bottom--md">
+    <div style={{border: '1px solid var(--sb-cinza-claro)', borderRadius: 12, padding: '1.5rem', textAlign: 'center'}}>
+      <img src={require('@site/static/img/logo.png').default} alt="Símbolo do Simula Brasil nas cores originais" height="110" />
+    </div>
+    <p style={{textAlign: 'center', color: 'var(--sb-cinza-escuro)', fontSize: '0.875rem'}}>Fundo branco: versão principal</p>
+  </div>
+  <div className="col col--6 margin-bottom--md">
+    <div style={{background: 'var(--sb-azul)', borderRadius: 12, padding: '1.5rem', textAlign: 'center'}}>
+      <img src={require('@site/static/img/logo-branco.png').default} alt="Símbolo do Simula Brasil na versão branca" height="110" />
+    </div>
+    <p style={{textAlign: 'center', color: 'var(--sb-cinza-escuro)', fontSize: '0.875rem'}}>Fundo azul: versão branca</p>
+  </div>
+</div>
+
+**Regras de uso**
+
+- Manter ao redor do logo um espaço livre equivalente à altura da letra “S”.
+- Largura mínima de 25 mm em materiais impressos e 120 px em telas.
+- Usar o símbolo sempre nas cores originais; sobre azul, usar a versão branca.
+
+**Evitar**
+
+- Distorcer, girar ou esticar o logotipo.
+- Trocar as cores do símbolo ou da palavra BRASIL.
+- Aplicar sobre fundos que reduzam o contraste.
+- Adicionar sombras, contornos ou efeitos.
+
+## 3.4.1. Cores
+
+### Principal
+
+<Paleta grupo="principal" />
+
+### Secundárias
+
+<Paleta grupo="secundarias" />
+
+### Neutras
+
+<Paleta grupo="neutras" />
+
+### Feedback
+
+<Paleta grupo="feedback" />
+
+:::note
+O vermelho de erro não aparece no logotipo: é uma cor funcional, usada somente em mensagens de erro.
+:::
+
+### Contraste (WCAG)
+
+A meta é uma razão mínima de 4.5:1 para texto comum. A proporção sugerida de uso é 60% branco e neutros, 25% azul e 15% verde, dourado e roxo somados.
+
+<TabelaContraste />
+
+## 3.4.2. Tipografia
+
+A **Open Sans** é a família única da plataforma: Bold para títulos e botões, Regular para texto corrido. Está disponível gratuitamente no Google Fonts; a alternativa de sistema é a Arial.
+
+<EscalaTipografica />
+
+Regras de texto:
+
+- Corpo nunca abaixo de 16 px, com entrelinha de 1,5.
+- Em telas pequenas, os títulos diminuem: H1 26 px, H2 21 px e H3 18 px.
+- Texto alinhado à esquerda.
+- Caixa-alta só no logotipo e em rótulos curtos.
+- Frases curtas, em português simples.
+
+## 3.4.3. Iconografia e imagens
+
+Ícones de traço simples e imagens que mostram quem a plataforma atende.
+
+> _[Preencher: biblioteca de ícones adotada e critérios de uso de imagens.]_
