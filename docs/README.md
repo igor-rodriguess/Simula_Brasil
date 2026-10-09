@@ -18,7 +18,7 @@ npm run build  # gera o site estático em docs/build
 | `wad/` | Páginas da documentação, uma por seção do WAD |
 | `../assets/` | Imagens do WAD, servidas direto da raiz do repositório (`assets/negocios/x.jpeg` vira `/negocios/x.jpeg`) |
 | `src/css/custom.css` | Cores, tipografia e componentes do tema, conforme o Guia de Estilos |
-| `src/components/` | `Figura`, `Ancora` e os blocos visuais do guia de estilos |
+| `src/components/` | `Figura` e `Ancora`, usados nas páginas do WAD |
 | `static/img/` | Logotipo (versão colorida e versão branca) |
 
 ## Adicionando uma figura
