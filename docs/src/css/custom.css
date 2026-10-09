@@ -1,0 +1,317 @@
+/**
+ * Tema do Simula Brasil, seguindo o Guia de Estilos.
+ * Proporção sugerida: 60% branco e neutros, 25% azul,
+ * 15% verde, dourado e roxo somados.
+ */
+
+:root {
+  /* Paleta da marca */
+  --sb-azul: #002b66;
+  --sb-verde: #0a7e65;
+  --sb-dourado: #e5a913;
+  --sb-roxo: #6a3b73;
+
+  /* Neutras */
+  --sb-branco: #ffffff;
+  --sb-cinza-claro: #d9d9d9;
+  --sb-cinza-escuro: #737373;
+  --sb-grafite: #2b2b2b;
+
+  /* Feedback */
+  --sb-sucesso: var(--sb-verde);
+  --sb-atencao: var(--sb-dourado);
+  --sb-erro: #b3261e;
+  --sb-info: var(--sb-azul);
+
+  /* Infima: azul como cor primária (títulos, botões, cabeçalho e links) */
+  --ifm-color-primary: #002b66;
+  --ifm-color-primary-dark: #00275c;
+  --ifm-color-primary-darker: #002557;
+  --ifm-color-primary-darkest: #001e47;
+  --ifm-color-primary-light: #003070;
+  --ifm-color-primary-lighter: #003375;
+  --ifm-color-primary-lightest: #003d8a;
+
+  --ifm-color-success: var(--sb-verde);
+  --ifm-color-warning: var(--sb-dourado);
+  --ifm-color-danger: var(--sb-erro);
+  --ifm-color-info: var(--sb-azul);
+
+  --ifm-background-color: var(--sb-branco);
+  --ifm-font-color-base: var(--sb-grafite);
+  --ifm-color-content-secondary: var(--sb-cinza-escuro);
+  --ifm-toc-border-color: var(--sb-cinza-claro);
+  --ifm-hr-background-color: var(--sb-cinza-claro);
+  --ifm-table-border-color: var(--sb-cinza-claro);
+
+  /* Tipografia: Open Sans, Arial como alternativa de sistema */
+  --ifm-font-family-base: 'Open Sans', Arial, sans-serif;
+  --ifm-heading-font-family: 'Open Sans', Arial, sans-serif;
+  --ifm-font-size-base: 16px; /* corpo nunca abaixo de 16 px */
+  --ifm-line-height-base: 1.5;
+  --ifm-font-weight-bold: 700;
+  --ifm-heading-font-weight: 700;
+  --ifm-heading-color: var(--sb-azul);
+
+  /* Escala com razão 1,25 a partir do corpo de 16 px */
+  --sb-h1: 2rem; /* 32 px */
+  --sb-h2: 1.5rem; /* 24 px */
+  --sb-h3: 1.25rem; /* 20 px */
+  --sb-h4: 1rem; /* 16 px */
+  --ifm-h1-font-size: var(--sb-h1);
+  --ifm-h2-font-size: var(--sb-h2);
+  --ifm-h3-font-size: var(--sb-h3);
+  --ifm-h4-font-size: var(--sb-h4);
+
+  --ifm-link-color: var(--sb-azul);
+  --ifm-link-hover-color: var(--sb-verde);
+
+  --ifm-navbar-background-color: var(--sb-azul);
+  --ifm-navbar-link-color: var(--sb-branco);
+  --ifm-navbar-link-hover-color: var(--sb-dourado);
+  --ifm-navbar-height: 4rem;
+
+  --ifm-footer-background-color: var(--sb-azul);
+  --ifm-footer-link-color: var(--sb-branco);
+  --ifm-footer-link-hover-color: var(--sb-dourado);
+  --ifm-footer-title-color: var(--sb-dourado); /* dourado sobre azul: 6.5:1 */
+
+  --ifm-button-border-radius: 8px;
+  --ifm-global-radius: 8px;
+  --ifm-code-font-size: 92%;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 43, 102, 0.08);
+}
+
+body {
+  background-color: var(--ifm-background-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Faixa de quatro cores no topo, como nas páginas do guia */
+.navbar {
+  box-shadow: none;
+  border-top: 6px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      var(--sb-azul) 0 25%,
+      var(--sb-verde) 25% 50%,
+      var(--sb-dourado) 50% 75%,
+      var(--sb-roxo) 75% 100%
+    )
+    1;
+}
+
+.navbar__title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--sb-branco);
+}
+
+.navbar__logo {
+  height: 2.25rem;
+}
+
+.navbar__toggle,
+.navbar .navbar__link {
+  color: var(--sb-branco);
+}
+
+.navbar__link--active {
+  color: var(--sb-dourado);
+}
+
+.navbar-sidebar,
+.navbar-sidebar__brand {
+  background-color: var(--sb-azul);
+}
+
+.navbar-sidebar .menu__link {
+  color: var(--sb-branco);
+}
+
+.navbar-sidebar .menu__link--active,
+.navbar-sidebar .menu__link:hover {
+  color: var(--sb-dourado);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.navbar-sidebar__back,
+.navbar-sidebar__close {
+  color: var(--sb-branco);
+}
+
+/* Hierarquia de títulos: H1 e H2 em azul, H3 em verde.
+   font-size explícito porque o tema do Docusaurus aumenta os títulos
+   dentro de .markdown (H1 48 px, H2 32 px, H3 24 px). */
+.markdown h1 {
+  font-size: var(--sb-h1);
+  line-height: 40px;
+}
+
+.markdown h2 {
+  font-size: var(--sb-h2);
+  line-height: 32px;
+  margin-top: 2.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--sb-cinza-claro);
+}
+
+.markdown h3 {
+  font-size: var(--sb-h3);
+  line-height: 28px;
+  color: var(--sb-verde);
+}
+
+.markdown h4,
+.markdown h5 {
+  font-size: var(--sb-h4);
+  line-height: 24px;
+  color: var(--sb-grafite);
+}
+
+/* Celular: títulos menores para não ocupar a tela inteira */
+@media (max-width: 996px) {
+  :root {
+    --sb-h1: 1.625rem; /* 26 px */
+    --sb-h2: 1.3125rem; /* 21 px */
+    --sb-h3: 1.125rem; /* 18 px */
+  }
+
+  .markdown h1 {
+    line-height: 34px;
+  }
+
+  .markdown h2 {
+    line-height: 28px;
+  }
+
+  .markdown h3 {
+    line-height: 26px;
+  }
+}
+
+/* Texto alinhado à esquerda */
+.markdown p,
+.markdown li {
+  text-align: left;
+}
+
+.markdown blockquote {
+  border-left-color: var(--sb-dourado);
+  background: #fdf7e7;
+  color: var(--sb-grafite);
+  border-radius: 0 8px 8px 0;
+  padding: 0.75rem 1rem;
+}
+
+.markdown table {
+  display: table;
+  width: 100%;
+}
+
+.markdown table thead tr {
+  background-color: var(--sb-azul);
+  color: var(--sb-branco);
+  border-bottom: none;
+}
+
+.markdown table thead th {
+  border-color: var(--sb-azul);
+}
+
+.markdown table tr:nth-child(2n) {
+  background-color: #f4f4f4;
+}
+
+/* Botões: Bold 16 px, branco sobre azul */
+.button {
+  font-weight: 700;
+}
+
+.button:not(.button--lg):not(.button--sm) {
+  font-size: 1rem;
+}
+
+.button--secondary {
+  --ifm-button-background-color: var(--sb-branco);
+  --ifm-button-border-color: var(--sb-azul);
+  --ifm-button-color: var(--sb-azul);
+  color: var(--sb-azul);
+}
+
+.button--secondary:hover {
+  background-color: #eef2f8;
+  color: var(--sb-azul);
+}
+
+/* Sidebar */
+.menu__link--active:not(.menu__link--sublist) {
+  font-weight: 700;
+  background-color: rgba(0, 43, 102, 0.07);
+  border-left: 3px solid var(--sb-verde);
+}
+
+.menu__link {
+  color: var(--sb-grafite);
+}
+
+.menu__caret:before,
+.menu__link--sublist-caret:after {
+  filter: none;
+}
+
+/* Admonições: texto sobre dourado sempre em grafite */
+.alert--warning {
+  --ifm-alert-background-color: #fdf3d7;
+  --ifm-alert-border-color: var(--sb-dourado);
+  --ifm-alert-foreground-color: var(--sb-grafite);
+}
+
+.alert--danger {
+  --ifm-alert-border-color: var(--sb-erro);
+}
+
+.alert--success {
+  --ifm-alert-border-color: var(--sb-verde);
+}
+
+.alert--info {
+  --ifm-alert-border-color: var(--sb-azul);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: var(--sb-azul);
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.pagination-nav__link {
+  border-color: var(--sb-cinza-claro);
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--sb-azul);
+}
+
+.pagination-nav__label {
+  color: var(--sb-azul);
+}
+
+/* Índices gerados das subseções (ex.: 3.1): mesmo H1 das páginas
+   e cards sem o resumo automático, que pega trechos de tabela */
+[class*='generatedIndexPage'] h1 {
+  font-size: var(--sb-h1);
+  line-height: 40px;
+}
+
+[class*='cardDescription'] {
+  display: none;
+}
+
+[class*='cardTitle'] {
+  white-space: normal;
+  overflow: visible;
+}
