@@ -7,6 +7,8 @@
 
 [Igor da Silva Rodrigues](https://www.linkedin.com/in/igor-dasilva-rodrigues/)
 
+[Júlia Amanda Gregate de Araujo](https://www.linkedin.com/in/julia-amanda-gregate-de-araujo/)
+
 [Julia Jesus Bezerra](https://www.linkedin.com/in/julia-jesus-bezerra-a872b5321/)
 
 ## Sumário
@@ -45,6 +47,14 @@ Além de reduzir drasticamente o tempo e o esforço de organização, a soluçã
 ## <a name="c2"></a>2. Visão Geral da Aplicação Web
 
 ## 2.1. Escopo do Projeto
+
+O escopo do Simula Brasil é estruturado a partir de uma abordagem que integra a estratégia de negócios, o mapeamento de valor centrado nos usuários e a antecipação de riscos técnicos e institucionais. Como o projeto não atende a um cliente único, mas depende da adesão voluntária de escolas públicas, esta seção se desdobra em cinco análises interconectadas que sustentam a viabilidade da plataforma junto a gestores, professores e estudantes da rede pública.
+
+Inicialmente, o Modelo de 5 Forças de Porter contextualiza o espaço das simulações da ONU (Model United Nations, MUN) e evidencia que, embora a rivalidade direta seja baixa, o poder de barganha das escolas públicas é alto, já que para elas o custo de não aderir ao projeto é praticamente nulo. Na sequência, a Análise SWOT (Forças, Fraquezas, Oportunidades e Ameaças) confronta o principal diferencial do projeto, a automação da montagem de fóruns por agentes de inteligência artificial (IA), com suas fragilidades: a ausência de validação de mercado e a dependência de recursos externos para o fundo de financiamento estudantil. A mesma análise dimensiona a oportunidade a partir do Censo Escolar 2024, segundo o qual 83,1% das matrículas do ensino médio estão na rede estadual pública.<sup>[1](#ref1)</sup>
+
+Com base nesses diagnósticos, a seção de Solução detalha as duas frentes do projeto, a aplicação que gera automaticamente a estrutura do fórum e a plataforma de formação e acesso para estudantes de baixa renda, além da arquitetura adotada, com React, Node.js, PostgreSQL e agentes orquestrados em Python com LangGraph. O Value Proposition Canvas conecta essas funcionalidades às dores de três segmentos distintos (gestores escolares, professores e alunos) e mostra que o maior encaixe está nos estudantes, enquanto o maior risco de desencaixe está nos gestores, cujo ceticismo exige provas concretas de impacto. Por fim, a Matriz de Riscos antecipa ameaças como a geração de conteúdo pedagogicamente inadequado pela IA e a conectividade limitada em escolas periféricas, e estabelece planos de ação que orientam decisões de produto, como a curadoria humana do conteúdo gerado, o processamento assíncrono do fórum e a exportação do material para uso offline.
+
+Em conjunto, essas análises asseguram que o escopo delimitado não se restrinja a automatizar a organização de um evento, mas enfrente as duas barreiras que hoje restringem as simulações da ONU à elite educacional: a complexidade operacional para quem organiza e o custo de acesso para quem participa.
 
 ### 2.1.1. Modelo de 5 Forças de Porter
 
@@ -608,25 +618,80 @@ Wireframes são representações visuais simplificadas de uma interface, utiliza
 
 Guia de estilos é o documento com as regras do que pode e não pode ser feito pela marca (CANVA, 2024), reunindo paleta de cores, tipografia, iconografia e imagens que orientam o desenvolvimento e a manutenção da interface.
 
+A identidade do Simula Brasil parte do próprio logotipo: o globo com louros remete às simulações da ONU, e as quatro figuras em azul, verde, dourado e roxo dão origem à paleta. As decisões visuais seguem quatro princípios, derivados do público do projeto:
+
+- **Confiável:** gestoras precisam de provas, não de promessas. Visual sóbrio, informação clara e sem exageros.
+- **Acolhedor:** alguns estudantes acham que MUNs não são para eles. Linguagem acessível em português e imagens de gente parecida com eles.
+- **Simples e sem esforço:** professores não têm tempo. Poucos cliques, fluxos "à prova de erros" e destaque para a próxima ação.
+- **Inclusivo:** a plataforma será usada em escolas periféricas, com conexão e telas variadas. Contraste alto, textos legíveis e boa leitura no celular.
+
+**Logotipo.** A versão principal, em cores, é aplicada sobre fundo branco; sobre fundo azul, usa-se a versão branca. Ao redor do logo deve haver um espaço livre equivalente à altura da letra "S", e a largura mínima é de 25 mm em materiais impressos e 120 px em telas. Não se deve distorcer, girar ou esticar o logotipo, trocar as cores do símbolo ou da palavra BRASIL, aplicá-lo sobre fundos que reduzam o contraste nem adicionar sombras, contornos ou efeitos.
+
 ### 3.4.1 Cores
 
 <div align="center">
   <sub>Figura 14 — Paleta de cores</sub><br>
-  <img src="assets/[IMAGEM].png" alt="Paleta de cores" width="600"><br>
-  <sup>Fonte: Autores, [ANO].</sup>
+  <img src="assets/guia-de-estilos/paleta-de-cores.png" alt="Paleta de cores" width="600"><br>
+  <sup>Fonte: Autores, 2026.</sup>
 </div>
 
-> _[Preencher: cores principais, secundárias, neutras e de feedback, com HEX, nome e onde/como cada uma é aplicada.]_
+A paleta foi extraída do logotipo. O azul é a cor da marca; verde, dourado e roxo funcionam como apoio e acento; as neutras sustentam fundos e textos. A proporção sugerida de uso é 60% branco e neutras, 25% azul e 15% verde, dourado e roxo somados.
+
+| Grupo | Cor | HEX | RGB | Onde é aplicada |
+|---|---|---|---|---|
+| Principal | Azul | `#002B66` | 0 43 102 | Títulos, logotipo, botões principais, cabeçalho e links |
+| Secundária | Verde | `#0A7E65` | 10 126 101 | Confirmações, destaques positivos e subtítulos |
+| Secundária | Dourado | `#E5A913` | 229 169 19 | Chamadas, selos e ícones sobre fundo escuro; texto sobre dourado sempre em grafite |
+| Secundária | Roxo | `#6A3B73` | 106 59 115 | Gráficos, categorias e elementos de apoio |
+| Neutra | Branco | `#FFFFFF` | 255 255 255 | Fundo das páginas e cartões |
+| Neutra | Cinza claro | `#D9D9D9` | 217 217 217 | Divisores, campos e blocos de fundo |
+| Neutra | Cinza escuro | `#737373` | 115 115 115 | Legendas e textos secundários |
+| Neutra | Grafite | `#2B2B2B` | 43 43 43 | Texto corrido e títulos neutros |
+
+**Cores de feedback.** Indicam o estado da interface. O vermelho de erro não aparece no logotipo: é uma cor funcional, usada somente em mensagens de erro.
+
+| Estado | HEX | Uso |
+|---|---|---|
+| Sucesso | `#0A7E65` | Cadastro concluído, fórum gerado |
+| Atenção | `#E5A913` | Prazos, revisão pendente |
+| Erro | `#B3261E` | Falhas e campos inválidos |
+| Informação | `#002B66` | Avisos e dicas |
+
+**Contraste.** Para atender ao princípio de inclusão, toda combinação de texto e fundo segue a razão mínima de 4,5:1 definida pelo nível AA das Diretrizes de Acessibilidade para Conteúdo Web (WCAG).
+
+| Combinação (texto / fundo) | Uso | Razão | Resultado |
+|---|---|---|---|
+| Azul / branco | Botão principal, cabeçalho | 13,7:1 | Aprovado (AA) |
+| Grafite / branco | Texto corrido | 14,2:1 | Aprovado (AA) |
+| Cinza escuro / branco | Legendas | 4,7:1 | Aprovado (AA) |
+| Verde / branco | Subtítulos, sucesso | 5,0:1 | Aprovado (AA) |
+| Roxo / branco | Elementos de apoio | 8,4:1 | Aprovado (AA) |
+| Grafite / dourado | Texto sobre dourado | 6,8:1 | Aprovado (AA) |
+| Dourado / azul | Destaque sobre azul | 6,5:1 | Aprovado (AA) |
+| Branco / dourado | Texto branco sobre dourado | 2,1:1 | Não usar para texto |
+| Dourado / branco | Texto dourado sobre branco | 2,1:1 | Não usar para texto |
 
 ### 3.4.2 Tipografia
 
 <div align="center">
   <sub>Figura 15 — Tipografia da plataforma</sub><br>
-  <img src="assets/[IMAGEM].png" alt="Tipografia" width="1200"><br>
-  <sup>Fonte: Autores, [ANO].</sup>
+  <img src="assets/guia-de-estilos/tipografia.png" alt="Tipografia" width="600"><br>
+  <sup>Fonte: Autores, 2026.</sup>
 </div>
 
-> _[Preencher: família(s) tipográfica(s), pesos e hierarquia.]_
+A Open Sans é a família única da plataforma, em dois pesos: Bold para títulos e botões e Regular para texto corrido. É gratuita no Google Fonts, e a Arial é a alternativa de sistema. A hierarquia segue uma escala de razão 1,25 a partir do corpo de 16 px, com títulos menores em telas pequenas para que não ocupem a tela inteira no celular.
+
+| Nível | Desktop (tamanho / entrelinha) | Celular (tamanho / entrelinha) | Peso e cor |
+|---|---|---|---|
+| Título H1 | 32 px / 40 | 26 px / 34 | Bold, azul |
+| Título H2 | 24 px / 32 | 21 px / 28 | Bold, azul |
+| Título H3 | 20 px / 28 | 18 px / 26 | Bold, verde |
+| Título H4 | 16 px / 24 | 16 px / 24 | Bold, grafite |
+| Corpo | 16 px / 24 | 16 px / 24 | Regular, grafite |
+| Legenda | 13 px / 20 | 13 px / 20 | Regular, cinza escuro |
+| Botão | 16 px | 16 px | Bold, branco sobre azul |
+
+O corpo do texto nunca fica abaixo de 16 px. O texto é alinhado à esquerda, a caixa-alta aparece só no logotipo e em rótulos curtos, e as frases são curtas, em português simples.
 
 ### 3.4.3 Iconografia e imagens
 
