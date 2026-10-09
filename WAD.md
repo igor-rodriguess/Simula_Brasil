@@ -449,6 +449,24 @@ Seus objetivos são desenvolver oratória, argumentação e pensamento crítico,
 
 Kauê só se engaja de verdade depois de ver alguém parecido com ele participando e gostando; um colega, não um adulto ou uma autoridade dizendo que "é importante", e precisa de uma primeira experiência de baixo esforço para não desistir antes de começar. Isso se resume na frase: "Isso parece coisa que não é pra mim, só vou levar a sério se eu ver alguém como eu fazendo e curtindo." O Simula Brasil resolve essa barreira com linguagem acessível em português, ambiente acolhedor, trilha progressiva sem exigir experiência prévia e mentoria por ex-alunos do próprio projeto, reduzindo a barreira de entrada percebida.
 
+### 2.2.4 Persona - Kauê Ferreira - O Aluno que Nunca Teve a Chance (usuário final)
+
+<div align="center">
+  <sub>Figura 7 — Beatriz Costa - A alnua que teve chances (usuário final) </sub><br>
+  <img src="assets/personas/Beatriz_costa.png" width="70%" alt="Beatriz Costa - A alnua que teve chances (usuário final)"><br>
+  <sup>Fonte: Simula Brasil, 2026.</sup>
+</div>
+
+Beatriz Costa, 17 anos, é estudante do 3º ano do ensino médio em uma escola particular de grande centro urbano. Já participou de diversos MUNs, atuando como delegada e, mais recentemente, como chair em conferências menores. Tem inglês fluente e pretende cursar Relações Internacionais ou Direito.
+
+Ela busca desenvolver habilidades de liderança e facilitação e construir um currículo com experiências de impacto social genuíno. Apesar disso, sente que o circuito de MUN está preso a uma “bolha”, com os mesmos perfis de alunos e escolas, além de perceber pouco propósito em competições focadas apenas em prêmios e rankings. Também tem dificuldade em encontrar oportunidades para usar sua experiência fora desse círculo e precisa conciliar qualquer atividade com o último ano do ensino médio e o vestibular.
+
+Beatriz geralmente conheceria o Simula Brasil por meio de sua escola, MUNs ou professores. Ao descobrir o projeto, tende a se engajar rapidamente, principalmente pelo propósito social. Ela valoriza funções estruturadas, onboarding, certificado e possibilidade de recomendação.
+
+“Eu já sei fazer isso, só nunca tive a chance de fazer isso valer a pena para alguém além de mim mesma.”
+
+O Simula Brasil aproveita sua experiência oferecendo um papel de facilitadora/mentora com treinamento e reconhecimento formal. Dessa forma, além de dar um novo sentido à experiência de Beatriz, o projeto cria uma rede própria de voluntários e reduz sua dependência de universidades e ONGs externas.
+
 
 ## 2.3. User Stories
 
