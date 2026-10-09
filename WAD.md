@@ -410,7 +410,7 @@
 
 &ensp; Durante essa seção, nossa equipe utilizou o conceito de proto-personas para identificar os perfis de usuários que a plataforma irá atender. Proto-personas são representações hipotéticas construídas com base no conhecimento prévio da equipe e nos dados disponíveis sobre o contexto do projeto, sem necessariamente passar por pesquisas formais com usuários reais (GOTHELF; SEIDEN, 2013).
 
-### 2.2.1 Persona - Marta - Gestora Escolar Crítica (decisora)
+### 2.2.1 Persona - Marta - Gestora Escolar Crítica 
 
 <div align="center">
   <sub>Figura 5 — Persona Gestora Escolar Crítica (decisora)</sub><br>
@@ -424,7 +424,7 @@
 
 &ensp; Diante do Simula Brasil, Marta não vai atrás do projeto, é o projeto que precisa convencê-la, com pouco esforço e risco praticamente nulo da parte dela. Ela responde melhor a provas concretas do que a promessas, o que resume sua postura na frase: "Eu não tenho tempo nem verba para apostar em algo que pode não dar em nada." O Simula Brasil resolve isso oferecendo formato 100% online e gratuito, kit de implementação pronto, capacitação gratuita de professores e alinhamento documentado com a BNCC, reduzindo o custo de adesão a praticamente zero.
 
-### 2.2.2 Persona - Rodrigo Santos - O Professor Sobrecarregado, mas Curioso (quem executa)
+### 2.2.2 Persona - Rodrigo Santos - O Professor Sobrecarregado, mas Curioso 
 
 <div align="center">
   <sub>Figura 6 — Professor Sobrecarregado, mas Curioso (quem executa)</sub><br>
@@ -438,7 +438,7 @@
 
 &ensp; Rodrigo aceita experimentar o Simula Brasil, mas precisa sentir que não está sozinho. Ele busca suporte, não apenas material teórico, e reage bem a exemplos práticos e ao contato com quem já viveu a experiência. Isso se resume na frase: "Eu quero fazer diferente, mas não posso correr o risco de bancar isso sozinho e ver os alunos perderem o interesse na segunda aula." O projeto resolve essas dores por meio de uma trilha de capacitação simples e gratuita, um manual do facilitador e uma rede de mentores formada por ex-alunos do próprio projeto, reduzindo tanto a insegurança técnica quanto o medo do desengajamento da turma.
 
-### 2.2.3 Persona - Kauê Ferreira - O Aluno que Nunca Teve a Chance (usuário final)
+### 2.2.3 Persona - Kauê Ferreira - O Aluno que Nunca Teve a Chance 
 
 <div align="center">
   <sub>Figura 7 — Kauê Ferreira - O Aluno que Nunca Teve a Chance (usuário final)</sub><br>
@@ -452,7 +452,7 @@
 
 &ensp; Kauê só se engaja de verdade depois de ver alguém parecido com ele participando e gostando; um colega, não um adulto ou uma autoridade dizendo que "é importante", e precisa de uma primeira experiência de baixo esforço para não desistir antes de começar. Isso se resume na frase: "Isso parece coisa que não é pra mim, só vou levar a sério se eu ver alguém como eu fazendo e curtindo." O Simula Brasil resolve essa barreira com linguagem acessível em português, ambiente acolhedor, trilha progressiva sem exigir experiência prévia e mentoria por ex-alunos do próprio projeto, reduzindo a barreira de entrada percebida.
 
-### 2.2.4 Persona - Beatriz Costa - A Aluna que Teve Chances (usuário final)
+### 2.2.4 Persona - Beatriz Costa - A Aluna que Teve Chances 
 
 <div align="center">
   <sub>Figura 8 — Beatriz Costa - A aluna que teve chances (usuário final)</sub><br>
@@ -479,7 +479,7 @@
 
 &ensp; As histórias foram classificadas em dois níveis de prioridade. São de alta prioridade as que compõem o fluxo essencial de cada persona: aderir ao projeto, organizar o fórum, preparar-se e ter acesso aos eventos, e mentorar. São de média prioridade as que complementam esse fluxo com comprovação de impacto, inscrição em eventos parceiros e reconhecimento formal do voluntariado.
 
-### 2.3.1. Marta Aparecida — gestora escolar (decisora)
+### 2.3.1. Marta Aparecida — gestora escolar 
  
 <div align="center">
   <sub>Quadro 1 — Primeira User Story</sub>
@@ -550,7 +550,7 @@ Critérios INVEST | <ul><li>I (Independente): consome dados já registrados pela
   <sup>Fonte: Autores, 2026.</sup>
 </div>
 
-### 2.3.2. Rodrigo Santos — professor organizador (quem executa)
+### 2.3.2. Rodrigo Santos — professor organizador 
  
 <div align="center">
   <sub>Quadro 4 — Quarta User Story</sub>
@@ -625,7 +625,7 @@ Critérios INVEST | <ul><li>I (Independente): a trilha e o manual não dependem 
   <sup>Fonte: Autores, 2026.</sup>
 </div>
 
-### 2.3.3. Kauê Ferreira — aluno da rede pública (usuário final)
+### 2.3.3. Kauê Ferreira — aluno da rede pública 
  
 <div align="center">
   <sub>Quadro 7 — Sétima User Story</sub>
@@ -699,6 +699,82 @@ Critérios INVEST | <ul><li>I (Independente): depende apenas de eventos parceiro
 <div align="center">
   <sup>Fonte: Autores, 2026.</sup>
 </div>
+
+### 2.3.4. Beatriz Costa — mentora voluntária 
+ 
+<div align="center">
+  <sub>Quadro 10 — Décima User Story</sub>
+</div>
+
+Identificação | US10 – Candidatar-se como mentora voluntária e concluir o onboarding (Alta prioridade)
+--- | ---
+Persona | Beatriz Costa
+User Story | Como estudante com experiência em MUN, quero me candidatar como mentora voluntária e concluir o onboarding do projeto para colocar o que já sei a serviço de alunos e professores da rede pública, em uma função bem definida.
+Critério de aceite 1 | CR1: Dado que a estudante acessa a opção "Quero ser mentora", quando a tela for carregada então o sistema deve exibir o formulário de candidatura com os campos funções já exercidas em MUN (delegada, diretoria ou organização), eventos de que participou, temas em que pode ajudar e disponibilidade semanal em horas.
+Critério de aceite 2 | CR2: Dado que a estudante está no formulário, quando preencher a disponibilidade semanal então o sistema deve exigir um valor numérico inteiro maior que zero.
+Critério de aceite 3 | CR3: Dado que a estudante está no formulário, quando tentar enviar sem preencher os campos obrigatórios (funções exercidas, temas em que pode ajudar e disponibilidade semanal) então o sistema deve exibir mensagens de validação indicando os campos pendentes.
+Critério de aceite 4 | CR4: Dado que a estudante preencheu corretamente todos os campos obrigatórios, quando confirmar a candidatura então o sistema deve registrá-la com status "Em análise" e exibir uma mensagem de confirmação.
+Critério de aceite 5 | CR5: Dado que a estudante já possui uma candidatura em análise ou aprovada, quando tentar enviar outra então o sistema deve impedir a duplicidade e exibir o status da candidatura existente.
+Critério de aceite 6 | CR6: Dado que a candidatura foi aprovada, quando a estudante acessar "Onboarding" então o sistema deve exibir os módulos de preparação (metodologia do Simula Brasil, contexto da escola pública e conduta na mentoria) em ordem sequencial.
+Critério de aceite 7 | CR7: Dado que a estudante está em um módulo de onboarding, quando concluí-lo então o sistema deve registrar a conclusão e liberar o módulo seguinte.
+Critério de aceite 8 | CR8: Dado que o onboarding ainda não foi concluído, quando um professor ou aluno acessar a rede de mentores então o sistema não deve exibir o perfil da estudante nem direcionar pedidos de mentoria a ela.
+Critério de aceite 9 | CR9: Dado que a estudante concluiu todos os módulos de onboarding, quando o último módulo for finalizado então o sistema deve ativar seu perfil na rede de mentores e exibir uma mensagem de confirmação.
+Critério de aceite 10 | CR10: Dado que a candidatura foi recusada, quando a estudante acessar o status então o sistema deve informar o motivo da recusa.
+Critério de aceite 11 | CR11: Dado que ocorre uma falha ao registrar a candidatura, quando a estudante confirmar o envio então o sistema deve exibir uma mensagem de erro clara e manter os dados preenchidos.
+Critérios INVEST | <ul><li>I (Independente): depende apenas do cadastro da estudante; pode ser entregue antes da fila de pedidos de mentoria (US11).</li><li>N (Negociável): os critérios de aprovação da candidatura e o conteúdo dos módulos de onboarding podem ser ajustados pela equipe do projeto.</li><li>V (Valiosa): forma o banco interno de facilitadores recomendado na análise das 5 Forças de Porter para reduzir a dependência de universidades e ONGs, e dá à persona a função estruturada que ela procura.</li><li>E (Estimável): escopo fechado em formulário de candidatura, trilha de onboarding e ativação de perfil.</li><li>S (Small/Pequena): cabe em uma sprint, dividida em candidatura e onboarding; a análise da candidatura pela equipe é história à parte.</li><li>T (Testável): os critérios cobrem validação, duplicidade, sequência do onboarding, bloqueio de perfil não ativado e recusa.</li></ul>
+ 
+<div align="center">
+  <sup>Fonte: Autores, 2026.</sup>
+</div>
+<br>
+<div align="center">
+  <sub>Quadro 11 — Décima Primeira User Story</sub>
+</div>
+
+Identificação | US11 – Atender pedidos de mentoria (Alta prioridade)
+--- | ---
+Persona | Beatriz Costa
+User Story | Como mentora voluntária, quero receber e responder pedidos de mentoria de professores e alunos e controlar minha disponibilidade para apoiar quem está começando sem comprometer meu último ano do ensino médio.
+Critério de aceite 1 | CR1: Dado que a mentora possui perfil ativo, quando acessar "Mentorias" então o sistema deve exibir os pedidos pendentes com solicitante, perfil do solicitante (professor ou aluno), escola e descrição da dúvida.
+Critério de aceite 2 | CR2: Dado que existe um pedido pendente, quando a mentora aceitá-lo então o sistema deve alterar o status para "Em atendimento" e informar o solicitante.
+Critério de aceite 3 | CR3: Dado que existe um pedido pendente, quando a mentora recusá-lo então o sistema deve devolvê-lo à fila da rede de mentores, mantendo o pedido aberto para o solicitante.
+Critério de aceite 4 | CR4: Dado que a mentora está em um pedido em atendimento, quando enviar uma resposta então o sistema deve registrá-la no histórico da mentoria e torná-la visível ao solicitante.
+Critério de aceite 5 | CR5: Dado que a mentora está em um pedido em atendimento, quando tentar enviar uma resposta vazia então o sistema deve exibir mensagem de validação.
+Critério de aceite 6 | CR6: Dado que a mentora possui perfil ativo, quando alterar sua disponibilidade semanal ou pausar o recebimento de pedidos então o sistema deve deixar de direcionar novos pedidos a ela, mantendo as mentorias já em atendimento.
+Critério de aceite 7 | CR7: Dado que a mentora atingiu o número de mentorias simultâneas compatível com a disponibilidade informada, quando um novo pedido for aberto então o sistema não deve direcioná-lo a ela.
+Critério de aceite 8 | CR8: Dado que a dúvida foi resolvida, quando a mentora encerrar a mentoria então o sistema deve alterar o status para "Concluída" e somar as horas registradas ao seu histórico de voluntariado.
+Critério de aceite 9 | CR9: Dado que não existem pedidos pendentes, quando a mentora acessar "Mentorias" então o sistema deve informar que não há pedidos no momento.
+Critério de aceite 10 | CR10: Dado que ocorre uma falha ao carregar os pedidos ou ao enviar uma resposta, quando a mentora realizar a ação então o sistema deve exibir uma mensagem de erro clara e preservar o texto digitado.
+Critérios INVEST | <ul><li>I (Independente): depende apenas de um perfil de mentora ativo (US10); pode ser testada com pedidos de exemplo, antes de a US06 estar concluída.</li><li>N (Negociável): o canal de resposta (texto ou encontro on-line) e o limite de mentorias simultâneas podem ser ajustados com as primeiras mentoras.</li><li>V (Valiosa): é o que sustenta, do outro lado, a promessa feita ao professor na US06, e respeita a restrição de tempo de uma voluntária em ano de vestibular.</li><li>E (Estimável): escopo fechado em fila de pedidos, troca de mensagens, controle de disponibilidade e encerramento.</li><li>S (Small/Pequena): cabe em uma sprint, dividida em fila e resposta, e disponibilidade e encerramento.</li><li>T (Testável): os critérios cobrem aceite, recusa, resposta vazia, pausa, limite de atendimentos e registro de horas.</li></ul>
+ 
+<div align="center">
+  <sup>Fonte: Autores, 2026.</sup>
+</div>
+<br>
+<div align="center">
+  <sub>Quadro 12 — Décima Segunda User Story</sub>
+</div>
+
+Identificação | US12 – Emitir certificado de voluntariado e solicitar carta de recomendação (Média prioridade)
+--- | ---
+Persona | Beatriz Costa
+User Story | Como mentora voluntária em ano de vestibular, quero emitir um certificado com as horas e as atividades realizadas e solicitar uma carta de recomendação para comprovar formalmente, no meu currículo, uma experiência de impacto social.
+Critério de aceite 1 | CR1: Dado que a mentora possui perfil ativo, quando acessar "Meu voluntariado" então o sistema deve exibir o resumo de sua atuação: mentorias concluídas, horas registradas e escolas atendidas.
+Critério de aceite 2 | CR2: Dado que a mentora possui ao menos uma mentoria concluída, quando solicitar o certificado então o sistema deve gerar um arquivo PDF com nome, função exercida, período de atuação, horas registradas e código de verificação.
+Critério de aceite 3 | CR3: Dado que a mentora não possui mentorias concluídas, quando solicitar o certificado então o sistema deve impedir a emissão e informar o requisito pendente.
+Critério de aceite 4 | CR4: Dado que um terceiro possui o código de verificação de um certificado, quando informá-lo na página pública de verificação então o sistema deve confirmar a autenticidade e exibir nome, função e horas certificadas.
+Critério de aceite 5 | CR5: Dado que o código de verificação informado não existe, quando a consulta for realizada então o sistema deve informar que o certificado não foi encontrado.
+Critério de aceite 6 | CR6: Dado que a mentora cumpriu a carga horária mínima definida pelo projeto, quando solicitar a carta de recomendação então o sistema deve registrar o pedido com status "Em análise" e exibir uma mensagem de confirmação.
+Critério de aceite 7 | CR7: Dado que a mentora ainda não cumpriu a carga horária mínima, quando solicitar a carta de recomendação então o sistema deve impedir o pedido e informar quantas horas faltam.
+Critério de aceite 8 | CR8: Dado que a mentora já possui um pedido de carta em análise, quando tentar abrir outro então o sistema deve impedir a duplicidade e exibir o status do pedido existente.
+Critério de aceite 9 | CR9: Dado que a carta de recomendação foi emitida pela equipe do projeto, quando a mentora acessar "Meu voluntariado" então o sistema deve disponibilizar a carta para download.
+Critério de aceite 10 | CR10: Dado que ocorre uma falha ao gerar o certificado ou ao registrar o pedido de carta, quando a mentora realizar a ação então o sistema deve exibir uma mensagem de erro clara.
+Critérios INVEST | <ul><li>I (Independente): consome o histórico de horas gerado na US11, mas pode ser desenvolvida e testada com um histórico de exemplo.</li><li>N (Negociável): a carga horária mínima para a carta e o modelo do certificado serão definidos pela equipe do projeto.</li><li>V (Valiosa): entrega o reconhecimento formal que motiva a persona a permanecer como voluntária, o que mantém a rede de mentores ativa entre uma edição e outra.</li><li>E (Estimável): escopo fechado em resumo de atuação, geração de certificado, página de verificação e pedido de carta.</li><li>S (Small/Pequena): cabe em uma sprint, dividida em certificado com verificação e pedido de carta.</li><li>T (Testável): os critérios cobrem emissão, bloqueio sem mentoria concluída, verificação de código válido e inválido, carga mínima e duplicidade.</li></ul>
+ 
+<div align="center">
+  <sup>Fonte: Autores, 2026.</sup>
+</div>
+As doze User Stories cobrem o ciclo completo previsto na solução (seção 2.1.3): a gestora autoriza e comprova (US01 a US03), o professor gera, revisa e conduz (US04 a US06), o aluno se prepara e acessa eventos (US07 a US09) e a mentora sustenta a rede de apoio (US10 a US12). Elas servem de base para os requisitos funcionais e as regras de negócio detalhados na seção 3.1.
 
 # <a name="c3"></a>3. Projeto da Aplicação Web
 
