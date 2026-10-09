@@ -553,7 +553,7 @@ Critérios INVEST | <ul><li>I (Independente): consome dados já registrados pela
 ### 2.3.2. Rodrigo Santos — professor organizador (quem executa)
  
 <div align="center">
-  <sub>Quadro 5 — Quarta User Story</sub>
+  <sub>Quadro 4 — Quarta User Story</sub>
 </div>
 
 Identificação | US04 – Gerar estrutura automática do fórum (Alta prioridade)
@@ -576,7 +576,7 @@ Critérios INVEST | <ul><li>I (Independente): depende apenas do cadastro do prof
 </div>
 <br>
 <div align="center">
-  <sub>Quadro 6 — Quinta User Story</sub>
+  <sub>Quadro 5 — Quinta User Story</sub>
 </div>
 
 Identificação | US05 – Revisar, ajustar e publicar a estrutura gerada por IA (Alta prioridade)
@@ -602,7 +602,7 @@ Critérios INVEST | <ul><li>I (Independente): depende apenas da existência de u
 </div>
 <br>
 <div align="center">
-  <sub>Quadro 7 — Sexta User Story</sub>
+  <sub>Quadro 6 — Sexta User Story</sub>
 </div>
 
 Identificação | US06 – Acessar trilha de capacitação e rede de mentores (Alta prioridade)
@@ -620,6 +620,81 @@ Critério de aceite 8 | CR8: Dado que não existem mentores disponíveis, quando
 Critério de aceite 9 | CR9: Dado que o professor concluiu todos os módulos da trilha, quando solicitar o certificado então o sistema deve emitir o certificado de facilitação em seu nome.
 Critério de aceite 10 | CR10: Dado que ocorre uma falha ao carregar a trilha ou a rede de mentores, quando o professor acessar a funcionalidade então o sistema deve exibir uma mensagem de erro clara.
 Critérios INVEST | <ul><li>I (Independente): a trilha e o manual não dependem do fórum; a rede de mentores depende apenas de existirem mentores ativos (US10), e o cenário sem mentores está coberto pelo CR8.</li><li>N (Negociável): o número de módulos, o formato do manual e o canal de contato com o mentor podem ser definidos com os professores do piloto.</li><li>V (Valiosa): resolve a insegurança técnica da persona e o medo de conduzir a atividade sozinho, pré-condição para que o professor aceite organizar o primeiro fórum.</li><li>E (Estimável): escopo fechado em trilha com progresso, manual para download e pedido de mentoria.</li><li>S (Small/Pequena): cabe em uma sprint, dividida em trilha e manual, e rede de mentores.</li><li>T (Testável): os critérios cobrem progresso, retomada, download, pedido de mentoria, ausência de mentores e emissão de certificado.</li></ul>
+ 
+<div align="center">
+  <sup>Fonte: Autores, 2026.</sup>
+</div>
+
+### 2.3.3. Kauê Ferreira — aluno da rede pública (usuário final)
+ 
+<div align="center">
+  <sub>Quadro 7 — Sétima User Story</sub>
+</div>
+
+Identificação | US07 – Acessar conteúdo educacional introdutório (Alta prioridade)
+--- | ---
+Persona | Kauê Ferreira
+User Story | Como aluno de escola pública sem experiência prévia em simulações, quero acessar conteúdo educacional introdutório em linguagem acessível para me preparar para minha primeira simulação sem me sentir despreparado.
+Critério de aceite 1 | CR1: Dado que o aluno está autenticado, quando acessar "Aprender" então o sistema deve exibir a trilha introdutória em módulos curtos, com a indicação de que não é necessária experiência prévia.
+Critério de aceite 2 | CR2: Dado que a trilha foi exibida, quando o aluno visualizar a lista de módulos então o sistema deve informar o tempo estimado de cada módulo antes de ele iniciar.
+Critério de aceite 3 | CR3: Dado que o aluno acessa a trilha pela primeira vez, quando abrir o primeiro módulo então o sistema deve exibir o relato de um ex-participante da rede pública sobre sua primeira simulação.
+Critério de aceite 4 | CR4: Dado que o aluno está em um módulo, quando encontrar um termo próprio das simulações (como delegado, comitê ou moção) então o sistema deve permitir a consulta do significado do termo em um glossário, sem sair do módulo.
+Critério de aceite 5 | CR5: Dado que o aluno está em um módulo, quando concluí-lo então o sistema deve registrar o progresso e liberar o módulo seguinte.
+Critério de aceite 6 | CR6: Dado que o aluno interrompeu a trilha, quando retornar a "Aprender" então o sistema deve retomar do ponto em que ele parou.
+Critério de aceite 7 | CR7: Dado que o aluno acessa a trilha pelo celular, quando o módulo for carregado então o sistema deve exibir o conteúdo com texto de no mínimo 16 px e sem rolagem horizontal.
+Critério de aceite 8 | CR8: Dado que o aluno concluiu todos os módulos introdutórios, quando o último módulo for finalizado então o sistema deve exibir uma mensagem de conclusão e indicar o próximo passo (consultar sua atribuição no fórum da escola ou a agenda de eventos).
+Critério de aceite 9 | CR9: Dado que ocorre uma falha ao carregar o conteúdo, quando o aluno acessar a trilha então o sistema deve exibir uma mensagem de erro clara.
+Critérios INVEST | <ul><li>I (Independente): depende apenas do cadastro do aluno e de conteúdo previamente publicado; não exige fórum criado nem evento na agenda.</li><li>N (Negociável): o número de módulos, os formatos de conteúdo e o relato de abertura podem ser ajustados após os testes com alunos.</li><li>V (Valiosa): reduz a barreira de entrada percebida pela persona ("isso não é pra mim") com uma primeira experiência de baixo esforço e a referência de um par.</li><li>E (Estimável): escopo delimitado em trilha com progresso, glossário e tela de conclusão.</li><li>S (Small/Pequena): cabe em uma sprint; a produção do conteúdo em si é tarefa editorial separada.</li><li>T (Testável): os critérios cobrem exibição da trilha, glossário, progresso, retomada, leitura no celular e tratamento de erro.</li></ul>
+ 
+<div align="center">
+  <sup>Fonte: Autores, 2026.</sup>
+</div>
+<br>
+<div align="center">
+  <sub>Quadro 8 — Oitava User Story</sub>
+</div>
+
+Identificação | US08 – Consultar agenda de eventos e solicitar fundo de financiamento (Alta prioridade)
+--- | ---
+Persona | Kauê Ferreira
+User Story | Como aluno de baixa renda, quero consultar a agenda de eventos MUN e solicitar o fundo de financiamento para conseguir participar de simulações externas que exigem taxa de inscrição.
+Critério de aceite 1 | CR1: Dado que o aluno está autenticado, quando acessar "Agenda" então o sistema deve exibir os eventos MUN com nome, data, formato (presencial ou on-line), valor da taxa de inscrição e a indicação de evento parceiro quando for o caso.
+Critério de aceite 2 | CR2: Dado que o aluno está na agenda, quando aplicar filtros por período ou por formato então o sistema deve exibir apenas os eventos correspondentes.
+Critério de aceite 3 | CR3: Dado que não existem eventos para o filtro aplicado, quando a busca for realizada então o sistema deve informar que não há eventos disponíveis.
+Critério de aceite 4 | CR4: Dado que o aluno selecionou um evento com taxa de inscrição, quando escolher "Solicitar financiamento" então o sistema deve exibir o formulário de solicitação com a escola de origem, as informações de elegibilidade exigidas pelo fundo e a justificativa do pedido.
+Critério de aceite 5 | CR5: Dado que o aluno está no formulário, quando tentar enviar sem preencher os campos obrigatórios então o sistema deve exibir mensagens de validação indicando os campos pendentes.
+Critério de aceite 6 | CR6: Dado que o aluno preencheu corretamente todos os campos obrigatórios, quando confirmar a solicitação então o sistema deve registrá-la com status "Em análise" e exibir uma mensagem de confirmação.
+Critério de aceite 7 | CR7: Dado que o aluno já possui uma solicitação em análise ou aprovada para o mesmo evento, quando tentar abrir outra então o sistema deve impedir a duplicidade e direcioná-lo para a solicitação existente.
+Critério de aceite 8 | CR8: Dado que o prazo de inscrição do evento foi encerrado, quando o aluno tentar solicitar financiamento então o sistema deve impedir a solicitação e informar que o prazo foi encerrado.
+Critério de aceite 9 | CR9: Dado que o fundo não possui saldo disponível para novas vagas, quando o aluno tentar solicitar financiamento então o sistema deve informar a indisponibilidade e permitir a entrada em lista de espera.
+Critério de aceite 10 | CR10: Dado que o aluno possui solicitações registradas, quando acessar "Minhas solicitações" então o sistema deve exibir o status de cada uma (Em análise, Aprovada ou Recusada) e, quando recusada, o motivo.
+Critério de aceite 11 | CR11: Dado que ocorre uma falha ao carregar a agenda ou ao registrar a solicitação, quando o aluno realizar a ação então o sistema deve exibir uma mensagem de erro clara.
+Critérios INVEST | <ul><li>I (Independente): a agenda depende apenas de eventos cadastrados; a solicitação depende apenas de um evento com taxa, sem relação com a geração do fórum.</li><li>N (Negociável): os critérios de elegibilidade e os campos do formulário serão definidos junto aos financiadores do fundo.</li><li>V (Valiosa): enfrenta a barreira de custo descrita na Introdução (inscrições de R$ 100 a mais de R$ 1.000) e é pré-condição do indicador de médio prazo da seção 2.1.3 (premiação de ao menos um aluno em simulação externa reconhecida): sem a taxa coberta, o aluno não chega ao evento.</li><li>E (Estimável): escopo fechado em listagem com filtros, formulário de solicitação e acompanhamento de status.</li><li>S (Small/Pequena): cabe em uma sprint, dividida em agenda e solicitação; a análise dos pedidos pela equipe é história à parte.</li><li>T (Testável): os critérios cobrem filtros, validação, duplicidade, prazo encerrado, fundo sem saldo e exibição de status.</li></ul>
+ 
+<div align="center">
+  <sup>Fonte: Autores, 2026.</sup>
+</div>
+<br>
+<div align="center">
+  <sub>Quadro 9 — Nona User Story</sub>
+</div>
+
+Identificação | US09 – Realizar inscrição institucional em eventos parceiros (Média prioridade)
+--- | ---
+Persona | Kauê Ferreira
+User Story | Como aluno participante do Simula Brasil, quero me inscrever institucionalmente em eventos parceiros pela plataforma para acessar simulações externas reconhecidas sem obstáculos burocráticos de inscrição individual.
+Critério de aceite 1 | CR1: Dado que existe um evento parceiro com inscrições abertas, quando o aluno selecioná-lo na agenda então o sistema deve exibir a opção "Inscrição institucional pelo Simula Brasil".
+Critério de aceite 2 | CR2: Dado que o aluno iniciou a inscrição, quando o formulário for carregado então o sistema deve preencher automaticamente nome, escola e série a partir do cadastro e solicitar apenas as informações que ainda faltam.
+Critério de aceite 3 | CR3: Dado que o aluno está no formulário, quando tentar enviar sem preencher os campos obrigatórios então o sistema deve exibir mensagens de validação indicando os campos pendentes.
+Critério de aceite 4 | CR4: Dado que o aluno preencheu corretamente todos os campos obrigatórios, quando confirmar a inscrição então o sistema deve registrá-la vinculada à escola do aluno, com status "Enviada", e exibir uma mensagem de confirmação.
+Critério de aceite 5 | CR5: Dado que o aluno já está inscrito no evento, quando tentar se inscrever novamente então o sistema deve impedir a duplicidade e informar que a inscrição já existe.
+Critério de aceite 6 | CR6: Dado que as vagas institucionais do evento estão esgotadas, quando o aluno tentar se inscrever então o sistema deve informar a indisponibilidade e permitir a entrada em lista de espera.
+Critério de aceite 7 | CR7: Dado que o prazo de inscrição do evento foi encerrado, quando o aluno tentar se inscrever então o sistema deve impedir a inscrição e informar que o prazo foi encerrado.
+Critério de aceite 8 | CR8: Dado que o aluno possui financiamento aprovado para o evento (US08), quando concluir a inscrição então o sistema deve indicar que a taxa está coberta pelo fundo.
+Critério de aceite 9 | CR9: Dado que o aluno possui inscrições registradas, quando acessar "Minhas inscrições" então o sistema deve exibir o status de cada uma (Enviada, Confirmada pelo evento ou Cancelada).
+Critério de aceite 10 | CR10: Dado que o prazo de inscrição ainda está aberto, quando o aluno selecionar "Cancelar inscrição" então o sistema deve solicitar confirmação, cancelar a inscrição e liberar a vaga.
+Critério de aceite 11 | CR11: Dado que ocorre uma falha ao registrar a inscrição, quando o aluno confirmar o envio então o sistema deve exibir uma mensagem de erro clara e manter os dados preenchidos.
+Critérios INVEST | <ul><li>I (Independente): depende apenas de eventos parceiros cadastrados na agenda; funciona com ou sem pedido de financiamento.</li><li>N (Negociável): os dados exigidos na inscrição variam conforme o acordo com cada evento parceiro.</li><li>V (Valiosa): remove a burocracia de inscrição individual para quem nunca participou de um evento externo e aproxima o aluno de simulações externas reconhecidas, como o FAAP MUN e o SPMUN, citados no critério de sucesso da seção 2.1.3.</li><li>E (Estimável): escopo fechado em formulário pré-preenchido, controle de vagas e prazos, e acompanhamento de status.</li><li>S (Small/Pequena): cabe em uma sprint; a integração com o sistema de cada evento parceiro fica fora desta história.</li><li>T (Testável): os critérios cobrem pré-preenchimento, duplicidade, vagas esgotadas, prazo encerrado, cancelamento e tratamento de erro.</li></ul>
  
 <div align="center">
   <sup>Fonte: Autores, 2026.</sup>
